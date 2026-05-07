@@ -1,0 +1,90 @@
+.slider {
+  margin-top: 15rem;
+
+
+&__header {
+  @include flex(flex-start, flex-end);
+
+}
+
+&__title {
+  max-width: 10ch;
+}
+
+&__controls {
+  @include flex(space-between, flex-end);
+  gap: 3rem;
+  width: 100%;
+}
+
+&__navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+&__arrow {
+  &:hover:not(:disabled) {
+    color: $color-text-second;
+    background: $color-accent;
+    border-color: $color-accent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-text-second;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+&__progress {
+  width: 100%;
+}
+
+&__progress-bar {
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}
+
+&__progress-fill {
+  height: 100%;
+  background: #F0F0F0;
+  transition: width 0.3s ease;
+  width: 0;
+}
+
+&__track-wrapper {
+  overflow: hidden;
+  margin-block-start: 5rem;
+}
+
+&__track {
+  @include flex(space-between, flex-start);
+
+  gap: 2rem;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  will-change: transform;
+}
+
+&__slide {
+  flex-shrink: 0;
+  width: calc((100% - 4rem) / 3);
+}
+
+@media (max-width: 1024px) {
+  .slider__slide {
+    width: calc((100% - 2rem) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .slider__slide {
+    width: 100%;
+  }
+}
+}

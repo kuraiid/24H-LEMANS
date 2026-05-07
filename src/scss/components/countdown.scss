@@ -1,0 +1,77 @@
+.countdown {
+  margin-top: 32rem;
+
+  &__timer {
+    @include flex();
+
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+  }
+
+  &__number {
+    transition: all 0.3s ease;
+    @extend %style-number-accent;
+  }
+
+  &__number--changing {
+    animation: pulse 0.3s ease;
+  }
+
+  &__separator {
+    margin-top: -2rem;
+    @extend %style-number-accent;
+
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown__number {
+    font-size: 4rem;
+  }
+
+  .countdown__item {
+    min-width: 70px;
+  }
+
+  .countdown__separator {
+    font-size: 3.5rem;
+  }
+
+  .countdown__timer {
+    gap: 1rem;
+  }
+}

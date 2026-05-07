@@ -1,0 +1,17 @@
+.hero__title {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 1rem;
+
+&::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../images/icons/dot.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+}

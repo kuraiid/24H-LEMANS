@@ -1,0 +1,29 @@
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.bg-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 1px;
+  height: 100vh;
+  background: rgba(16, 32, 74, 0.12);
+  
+  box-shadow: 240px 0 0 rgba(16, 32, 74, 0.12), 480px 0 0 rgba(16, 32, 74, 0.12), 720px 0 0 rgba(16, 32, 74, 0.12), 960px 0 0 rgba(16, 32, 74, 0.12), 1200px 0 0 rgba(16, 32, 74, 0.12), 1440px 0 0 rgba(16, 32, 74, 0.12), 1680px 0 0 rgba(16, 32, 74, 0.12);
+  will-change: box-shadow;
+  
+}
+
+
+@media (max-width: 900px) {
+  .bg-grid::before,
+  .bg-grid::after {
+    display: none;
+  }
+}

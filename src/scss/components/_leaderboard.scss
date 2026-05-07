@@ -1,0 +1,95 @@
+.leaderboard {
+  margin-top: 8rem;
+
+  &__title {
+    max-width: 7ch;
+  }
+
+  &__category-nav {
+        @include flex(flex-start);
+
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  &__arrow {
+    @extend %style-button-tr;
+  }
+  &__list {
+    margin-top: 5rem;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px $color-accent solid;
+  }
+
+  &__header-cell--left {
+    text-align: left;
+  }
+
+  &__header-cell--right, &__cell--right {
+    text-align: right;
+  }
+
+  &__header-cell--center {
+    text-align: center;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transition: all 0.2s ease;
+  }
+
+  &__row--hover {
+    background: $color-bg-dark;
+    transform: scale(1.02);
+    color: $color-text-second;
+    cursor: none;
+    padding-inline: 10px;
+  }
+
+  &__cell {
+    padding-block: 1rem;
+  }
+
+  &__hover-image {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.2s ease, top 0.2s ease, transform 0.2s ease;
+    display: none;
+    transform: scale(0.9);
+  }
+
+  &__hover-image.visible {
+    opacity: 1;
+    display: block;
+    transform: scale(1);
+  }
+
+  &__hover-image:hover {
+    pointer-events: auto;
+  }
+
+  &__hover-image:hover::after {
+    opacity: 1;
+  }
+
+  &__more {
+    margin-top: 2rem;
+        @include flex(right);
+
+  }
+
+}

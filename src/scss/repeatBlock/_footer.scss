@@ -1,0 +1,51 @@
+.footer {
+  background-color: $color-bg-dark;
+  color: $color-text-second;
+  margin-top: 10rem;
+
+  
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-block: 30px;
+  }
+
+  &__top {
+    @include flex(space-between);
+  }
+
+  &__social-list {
+    @include flex(space-between);
+    gap: 10px;
+  }
+
+  &__social-info {
+    text-align: right;
+  }
+
+  &__bottom {
+    @include flex(space-between, flex-end);
+  }
+  &__logo {
+  @extend %style-logo;
+
+  }
+  &__link {
+    max-width: 250px;
+    word-break: break-word;
+
+    &--left {
+      text-align: left;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+}

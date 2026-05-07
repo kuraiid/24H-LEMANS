@@ -1,0 +1,59 @@
+    /* Основная палитра (Dark) */
+    /* Фоновые цвета */
+    $color-bg-light: #f5f7fa;
+    $color-bg-dark: #10204A;
+
+    /*Цвет текста */
+    $color-text-first: #10204A;   
+    $color-text-second: #F0F0F0;    
+    $color-text-muted: rgba(17, 34, 80, 0.62); 
+    
+
+   /*Кнопки */
+    $color-accent: #10204A;       
+    $color-text-accent: #FFFFFF; 
+    $color-border: #e0e0e0;
+
+    /*Typography */
+    $font-family-title: 'Tektur', sans-serif; /* Шрифт для заголовков */
+    $font-family-base: 'Montserrat', sans-serif; /* Шрифт для основного текста */
+    $font-family-accent: 'Orbitron', sans-serif; /* Шрифт для акцентного текста */
+
+    $font-size-s: 1.4rem;
+    $font-size-m: 1.8rem; /*18px*/
+    $font-size-l: 2rem;/*20px*/
+    $font-size-ml:  2.4rem;/*24px*/
+
+    $font-size-xl: 4rem;   /* 40px */
+    $font-size-2xl: 6.4rem; /*64px*/
+    $font-size-3xl: 9.6rem; /*96px*/
+    
+    /*Spacing */
+    $spacing-xs: 0.25rem;
+    $spacing-sm: 0.5rem;
+    $spacing-md: 1rem;
+    $spacing-lg: 1.5rem;
+    $spacing-xl: 2rem;
+    $spacing-2xl: 3rem;
+    $spacing-3xl: 4rem;
+    $spacing-4xl: 6rem;
+    
+    /*Скругление углов */
+    $radius-sm: 0.25rem;
+    $radius-md: 5px;
+    $radius-lg: 1rem;
+    $radius-full: 50%;
+    
+    /*ZАнимация */
+    $transition-fast: 150ms ease-in-out;
+    $transition-base: 300ms ease-in-out;
+    $transition-slow: 500ms ease-in-out;
+
+    /*Z-Index */
+    $z-dropdown: 1000;
+    $z-modal: 1050;
+    $z-popover: 1060;
+    $z-tooltip: 1070;
+
+    $container-max-width: 1640px;
+    $container-padding-x: 20px;

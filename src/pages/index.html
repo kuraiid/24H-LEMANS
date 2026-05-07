@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГОНКА WEC 24h LE_mans - официальный сайт гонки, расписание, рейтинги и события">
+    <meta name="keywords" content="WEC, 24h Le Mans, автоспорт, гоночные события">
+    <meta name="author" content="Fairy">
+
+    <title>24H Lemans</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="content">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="bg-grid" aria-hidden="true" role="presentation"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">farry.</a>
+            <nav class="header__nav">
+                <button id="menu-button" aria-controls="fullscreenInfo">МЕНЮ +</button>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay" id="fullscreenInfo">
+        <div class="overlay__wrapper">
+            <div class="overlay__left">
+                <nav class="overlay__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="overlay__nav-link">Главная</a>
+                    <a href="#" class="overlay__nav-link">История</a>
+                    <a href="#" class="overlay__nav-link">Команды</a>
+                    <a href="#" class="overlay__nav-link">Трасса</a>
+                    <a href="#" class="overlay__nav-link">Билеты</a>
+                </nav>
+
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="../images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            <div class="overlay__center">
+                <button class="overlay__button-close" aria-label="Закрыть">✕</button>
+
+
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет" onclick="window.location.href='tickets.html'">
+                    <span class="button-buy__outer-circle">
+                        <span class="button-buy__inner-circle">
+                            <span class="button-buy__text">
+                                Купить  билет
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            ГОНКА WEC
+                            <br>
+                            24h LE_mans
+                        </h1>
+                        <div class="hero__info">
+                            <p class="hero__description">
+                                Ежегодная 24-часовая автомобильная гонка на выносливость, которая проводится на трассе
+                                «Сарта» (Circuit de la Sarthe) близ города Ле-Ман во Франции. 
+                            </p>
+                            <ul class="hero__social-list">
+                                <li class="hero__social-item"><a class="hero__social-link" href="#"
+                                        rel="noopener noreferrer"><img src="../images/icons/dark/Facebook.svg"
+                                            alt="Facebook" class="hero__icon"></a></li>
+                                <li class="hero__social-item"><a class="hero__social-link" href="#"
+                                        rel="noopener noreferrer"><img src="../images/icons/dark/Myspace Circled.svg"
+                                            alt="Myspace Circled" class="hero__icon"></a></li>
+                                <li class="hero__social-item"><a class="hero__social-link" href="#"
+                                        rel="noopener noreferrer"><img src="../images/icons/dark/Pinterest.svg"
+                                            alt="Pinterest" class="hero__icon"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="../images/banner-img.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
+                        class="hero__image" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h2 class="about__title">Самый популярный вид автоспорта</h2>
+                    <div class="about__content" data-speed=".4">
+                        <p class="about__subtitle">о гонке</p>
+                        <p class="about__description">Организатором гонки с 1923 года выступает Западный автомобильный
+                            клуб Франции (Automobile Club de l’Ouest, ACO), основанный в 1906 году . Название гонки
+                            происходит от города, в окрестностях которого она проводится — Ле-Ман находится почти в
+                            центре Франции, в регионе Земли Луары</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <div class="stats__wrapper">
+                    <div class="stats__top">
+                        <p class="stats__description">По современным правилам на старт выходят не более 62 автомобилей,
+                            а каждый экипаж состоит из трёх пилотов, которые сменяют друг друга за рулём. Все машины
+                            разделены на три основных класса: Hypercar, LMP2, LMGT3</p>
+                        <p class="stats__description">Суть гонки заключается в том, чтобы за 24 часа непрерывного
+                            движения преодолеть максимально возможную дистанцию. Побеждает экипаж и автомобиль,
+                            показавшие лучший результат по километражу, а не по времени прохождения круга</p>
+                    </div>
+                    <div class="stats__bottom">
+                        <div class="stats__item">
+                            <p class="stats__number">250</p>
+                            <p class="stats__label">тысяч зрителей</p>
+                        </div>
+                        <div class="stats__item">
+                            <p class="stats__number">62</p>
+                            <p class="stats__label">автомобиля</p>
+                        </div>
+                        <div class="stats__item">
+                            <p class="stats__number">103</p>
+                            <p class="stats__label">года</p>
+                        </div>
+                        <div class="stats__item">
+                            <p class="stats__number">120</p>
+                            <p class="stats__label">миллионов телезрителей </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leaderboard">
+            <div class="container">
+                <div class="leaderboard__wrapper">
+                    <h2 class="leaderboard__title">Лидеры рейтинга</h2>
+                    <div class="leaderboard__category-nav">
+                        <button class="leaderboard__arrow leaderboard__arrow--prev">←</button>
+                        <div class="leaderboard__category-display">
+                            <span class="leaderboard__category-name">HYPERCAR</span>
+                        </div>
+                        <button class="leaderboard__arrow leaderboard__arrow--next">→</button>
+                    </div>
+
+                    <div class="leaderboard__header">
+                        <span class="leaderboard__header-cell leaderboard__header-cell--left">Позиция</span>
+                        <span class="leaderboard__header-cell">Номер команды</span>
+                        <span class="leaderboard__header-cell">Команда</span>
+                        <span class="leaderboard__header-cell leaderboard__header-cell--center"></span>
+                        <span class="leaderboard__header-cell leaderboard__header-cell--right">Очки</span>
+                    </div>
+
+                    <div class="leaderboard__list" id="leaderboardList"></div>
+                    <div class="leaderboard__more">
+                        <a href="#" class="leaderboard__link">Узнать больше -></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="countdown">
+            <div class="container">
+                <div class="countdown__wrapper">
+                    <div class="countdown__timer">
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="days">00</span>
+                            <span class="countdown__label">дней</span>
+                        </div>
+                        <div class="countdown__separator">:</div>
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="hours">00</span>
+                            <span class="countdown__label">часов</span>
+                        </div>
+                        <div class="countdown__separator">:</div>
+                        <div class="countdown__item">
+                            <span class="countdown__number" id="minutes">00</span>
+                            <span class="countdown__label">минут</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="calendar">
+            <div class="container">
+                <div class="calendar__wrapper">
+                    <p class="calendar__subtitle">календарь гонки</p>
+                    <div class="calendar__events">
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">5-6 ИЮНЯ</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">7 ИЮНЯ</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">8-9 июня</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">10 ИЮНЯ</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">8-9 июня</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="calendar__event">
+                            <div class="calendar__stroke">
+                                <h2 class="calendar__date">11 ИЮНЯ</h2>
+                                <button class="calendar__plus" aria-label="Развернуть события"
+                                    aria-expanded="false">+</button>
+                            </div>
+                            <div class="calendar__content">
+                                <div class="calendar__content-left">
+                                    <p class="calendar__description">Конечно, я могу написать текст на любую тему,
+                                        которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать, и я
+                                        постараюсь создать для вас интересный и понятный материал.</p>
+                                    <a href="" class="calendar__link">Узнать больше -></a>
+                                </div>
+                                <div class="calendar__content-right">
+                                    <img src="../images/calendar/11.png" alt="" class="calendar__image">
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="slider">
+            <div class="container">
+                <div class="slider__wrapper">
+                    <div class="slider__header">
+                        <h2 class="slider__title">Последние новости</h2>
+
+                        <div class="slider__controls">
+                            <div class="slider__navigation">
+                                <button class="slider__arrow slider__arrow--prev" aria-label="Предыдущий слайд"
+                                    type="button">
+                                    <span aria-hidden="true">←</span>
+                                </button>
+
+                                <button class="slider__arrow slider__arrow--next" aria-label="Следующий слайд"
+                                    type="button">
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                            </div>
+
+                            <div class="slider__progress" aria-label="Прогресс слайдера">
+                                <div class="slider__progress-bar">
+                                    <div class="slider__progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__track-wrapper">
+                        <div class="slider__track">
+                            <!-- Слайд 1 -->
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">Опубликован предварительный список участников
+                                            </h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">В этом году гонка Le Mans Classic (2–5 июля)
+                                                обещает стать исключительным событием. Опубликованный предварительный
+                                                список участников впечатляет: в нем представлены культовые прототипы и
+                                                легендарные автомобили класса GT</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Слайд 2 -->
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/2.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">Дориан Пин назначена пилотом-испытателем
+                                                команды Peugeot TotalEnergies</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Французская команда объявила, что Дориан Пин
+                                                стала пилотом-испытателем гиперкара Peugeot 9X8.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/3.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">Сара Бови, Дэвид Кларк и Фредерик Соссе на 94-й
+                                                церемонии вручения премии</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">В этом году на «24 часах Ле-Мана» (10–14 июня)
+                                                ACO чествует трех выдающихся деятелей автоспорта.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">24 часа Ле-Мана</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Конечно, я могу написать текст на любую тему,
+                                                которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать,
+                                                и я постараюсь создать для вас интересный и понятный материал.</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">24 часа Ле-Мана</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Конечно, я могу написать текст на любую тему,
+                                                которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать,
+                                                и я постараюсь создать для вас интересный и понятный материал.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">24 часа Ле-Мана</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Конечно, я могу написать текст на любую тему,
+                                                которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать,
+                                                и я постараюсь создать для вас интересный и понятный материал.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">24 часа Ле-Мана</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Конечно, я могу написать текст на любую тему,
+                                                которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать,
+                                                и я постараюсь создать для вас интересный и понятный материал.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="slider__slide">
+                                <article class="news-card">
+                                    <div class="news-card__image">
+                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                    </div>
+                                    <div class="news-card__content">
+                                        <div class="news-card__top-inf">
+                                            <h4 class="news-card__title">24 часа Ле-Мана</h4>
+                                            <time class="news-card__date" datetime="2026-06-15">15 июня 2026</time>
+                                        </div>
+                                        <div class="news-card__bot-inf">
+                                            <p class="news-card__text">Конечно, я могу написать текст на любую тему,
+                                                которую вы мне предложите. Просто скажите, о чем бы вы хотели прочитать,
+                                                и я постараюсь создать для вас интересный и понятный материал.</p>
+
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                    alt="Facebook" class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                    </ul>
+
+                    <div class="footer__social-info">
+                        <p class="footer__phone"><a href="tel:+79000000000" class="footer__link"
+                                rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                        <p class="footer__email"><a href="mailto:info@lm24wheel.ru" class="footer__link"
+                                rel="noopener noreferrer">info@lm24.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__logo" href="index.html">farry.</a>
+
+                    <a class="footer__link footer__link--left" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--center" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--right" href="#">Настройки конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="../js/script.js"></script>
+    <script src="../js/table-hover.js"></script>
+
+    <script src="../js/countdown.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/cursor.js"></script>
+
+
+
+
+
+</body>
+
+</html> 

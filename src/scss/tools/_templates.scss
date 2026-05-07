@@ -1,0 +1,57 @@
+%style-link-overlay {
+    font-family: $font-family-title;
+    font-weight: 400;
+    line-height: 1;
+    font-size: $font-size-3xl;
+}
+
+%style-logo {
+
+    font-size: $font-size-ml;
+
+}
+
+%style-number-accent {
+    font-family: $font-family-accent;
+    font-size: $font-size-3xl;
+}
+%style-button-tr {
+    border: none;
+    background-color: transparent;
+}
+
+%style-button-full {
+    border: none;
+    background-color: $color-bg-light;
+}
+
+%style-button-buy {
+    .button-buy {
+    @include flex(center);
+    @extend %style-button-tr;
+
+    &__outer-circle {
+        width: 32rem;
+        height: 32rem;
+        flex-shrink: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        @include flex(center);
+
+    }
+
+    &__inner-circle {
+        width: 25.6rem;
+        height: 25.6rem;
+        flex-shrink: 0;
+        border: 1px solid white;
+        border-radius: 50%;
+        @include flex(center);
+        transition: transform 0.3s ease;
+    }
+
+    &__text {
+        color: $color-text-second;
+    }
+}
+}

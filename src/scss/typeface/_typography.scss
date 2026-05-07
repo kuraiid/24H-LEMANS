@@ -1,0 +1,87 @@
+html {
+  /* 62.5% = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-m;
+  line-height: 1;
+  color: $color-text-first;
+  background: $color-bg-light;
+  margin: 0;
+}
+
+h1 {
+  font-family: $font-family-title;
+  font-weight: 400;
+  line-height: 1;
+  font-size: $font-size-3xl;
+}
+
+h2 {
+  font-family: $font-family-title;
+  font-weight: 400;
+  line-height: 0.75;
+  font-size: $font-size-2xl;
+}
+
+h3 {
+  font-family: $font-family-title;
+  font-size: 4rem;
+  line-height: $font-size-xl;
+}
+
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+  font-weight: 600;
+  font-size: $font-size-l;
+}
+
+/* Параграфы и вспомогательные текстовые элементы */
+p {
+  margin: 0 0 10px 0;
+}
+
+/* Ссылки */
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.logo-link:hover {
+  transition: none;
+  cursor: pointer;
+}
+
+label {
+  font-family:$font-family-base;
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  font-size: $font-size-l;
+  color: $color-text-first;
+  font-weight: 400;
+}
+
+input,
+textarea,
+select {
+  font-family: $font-family-base;
+  font-size: $font-size-m;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+blockquote {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  border-left: 3px solid rgba(0, 0, 0, 0.06);
+  color: rgba(17, 34, 80, 0.62);
+}

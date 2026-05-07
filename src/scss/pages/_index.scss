@@ -1,0 +1,136 @@
+.about__title {
+  max-width: 65rem;
+  margin-top: 8rem;
+}
+.about__content {
+  margin-top: 25rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.about__subtitle {
+  color: $color-text-muted;
+  text-transform: uppercase;
+}
+.about__description {
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.stats {
+  background: url("../images/bg-stats.png") center/cover no-repeat;
+  min-height: 700px;
+  color: $color-text-second;
+  margin-top: 8rem;
+
+&__wrapper {
+  padding-block: 2rem;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+&__top {
+      @include flex(space-between);
+
+  gap: 4rem;
+}
+&__description {
+  flex: 1;
+  max-width: 45ch;
+}
+&__bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  margin-top: auto;
+}
+&__item {
+      @include flex(flex-start);
+
+  gap: 2rem;
+  
+}
+&__number {
+    @extend %style-number-accent;
+
+}
+&__label {
+  max-width: 10ch;
+}
+
+}
+
+.calendar {
+  margin-top: 32rem;
+
+&__events {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+&__stroke {
+      @include flex(flex-start, flex-end);
+
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+&__stroke:hover {
+  opacity: 0.7;
+}
+&__stroke--active {
+  color: #F0F0F0;
+}
+&__date {
+  pointer-events: none;
+    @extend %style-number-accent;
+
+}
+&__plus {
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+&__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    margin 0.3s ease;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+&__content--open {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+&__content-left {
+  flex: 0 1 400px;
+  text-align: right;
+}
+&__content-right {
+  flex: 0 0 200px;
+}
+&__content-right img {
+  width: 100%;
+  height: auto;
+}
+&__link {
+  display: inline-block;
+  font-size: $font-size-s;
+  margin-top: 1rem;
+}
+&__link:hover {
+  text-decoration: underline;
+}
+
+}

@@ -1,0 +1,26 @@
+.hero {
+  margin-top: 23rem;
+
+  &__content {
+    @include flex(space-between, stretch);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 42rem;
+    text-align: right;
+    min-height: 100%;
+  }
+
+  &__social-list {
+    @include flex(flex-end);
+    gap: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}

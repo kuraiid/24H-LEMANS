@@ -1,0 +1,13 @@
+button {
+  border-radius: 50%;
+  border: 1px solid $color-accent;
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+}
+
+#menu-button {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+}
