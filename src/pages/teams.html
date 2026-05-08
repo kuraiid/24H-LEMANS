@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГОНКА WEC 24h LE_mans - официальный сайт гонки, расписание, рейтинги и события">
+    <meta name="keywords" content="WEC, 24h Le Mans, автоспорт, гоночные события">
+    <meta name="author" content="Fairy">
+
+    <title>24H Lemans</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="content">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="bg-grid" aria-hidden="true" role="presentation"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">farry.</a>
+            <nav class="header__nav">
+                <button id="menu-button" aria-controls="fullscreenInfo">МЕНЮ +</button>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay" id="fullscreenInfo">
+        <div class="overlay__wrapper">
+            <div class="overlay__left">
+                <nav class="overlay__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="overlay__nav-link">Главная</a>
+                    <a href="history.html" class="overlay__nav-link">История</a>
+                    <a href="teams.html" class="overlay__nav-link">Команды</a>
+                    <a href="#" class="overlay__nav-link">Трасса</a>
+                    <a href="#" class="overlay__nav-link">Билеты</a>
+                </nav>
+
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="../images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            <div class="overlay__center">
+                <button class="overlay__button-close" aria-label="Закрыть">✕</button>
+
+
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет"
+                    onclick="window.location.href='tickets.html'">
+                    <span class="button-buy__outer-circle">
+                        <span class="button-buy__inner-circle">
+                            <span class="button-buy__text">
+                                Купить билет
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            СПИСОК <br>
+                            КОМАНД
+                        </h1>
+                        <div class="hero__info">
+                            <p class="hero__description">
+                                Ежегодная 24-часовая автомобильная гонка на выносливость, которая проводится на трассе
+                                «Сарта» (Circuit de la Sarthe) близ города Ле-Ман во Франции. 
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../images/pageTeams/banner.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
+                        class="hero__image" loading="lazy" width="600" height="400">
+
+                    <div class="hero__stats">
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">250</p>
+                            <p class="hero__stats-label">тысяч зрителей</p>
+                        </div>
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">250</p>
+                            <p class="hero__stats-label">тысяч зрителей</p>
+                        </div>
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">250</p>
+                            <p class="hero__stats-label">тысяч зрителей</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teams">
+            <div class="container">
+                <div class="teams__wrapper">
+                    <div class="teams__content">
+                        <div class="teams__block">
+                            <h3 class="teams__title">HYPERCAR</h3>
+                            <div class="teams__cards">
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+                                
+                            </div>
+                        </div>
+                        <div class="teams__block">
+                            <h3 class="teams__title">HYPERCAR</h3>
+                            <div class="teams__cards">
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+                                
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+                                
+                            </div>
+                        </div>
+                        <div class="teams__block">
+                            <h3 class="teams__title">HYPERCAR</h3>
+                            <div class="teams__cards">
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+                                
+                                <article class=" teams__card card cursor-hover">
+                                    <div class="card__top">
+                                        <div class="card__company">
+                                            <img class="card__icon" src="../images/pageTeams/icons/ferrari.svg" loading="lazy">
+                                            <p class="card__name">Ferrari</p>
+                                        </div>
+                                        <div class="card__number">#52</div>
+                                    </div>
+
+                                    <div class="card__center">
+                                        <img class="card__image" loading="lazy" src="../images/pageTeams/hypercar/ferrari52.png">
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a class="card__link">Узнать больше -></a>
+                                    </div>
+                            
+                                </article>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                    alt="Facebook" class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                    </ul>
+
+                    <div class="footer__social-info">
+                        <p class="footer__phone"><a href="tel:+79000000000" class="footer__link"
+                                rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                        <p class="footer__email"><a href="mailto:info@lm24wheel.ru" class="footer__link"
+                                rel="noopener noreferrer">info@lm24.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__logo" href="index.html">farry.</a>
+
+                    <a class="footer__link footer__link--left" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--center" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--right" href="#">Настройки конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/table-hover.js"></script>
+
+    <script src="../js/countdown.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/cursor.js"></script>
+
+
+
+
+
+</body>
+
+</html>

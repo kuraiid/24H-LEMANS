@@ -1,63 +1,85 @@
-
-let mouseX, mouseY, posX, posY
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    const body = document.querySelector('body')
+    const cursor = document.getElementById('cursor');
+    const aura = document.getElementById('aura');
 
-    const cursor   = document.getElementById('cursor'),
-          follower = document.getElementById('aura'),
-          links    = document.getElementsByTagName('a')
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
 
-    mouseX = 0, mouseY = 0, posX = 0, posY = 0
+    let auraX = mouseX;
+    let auraY = mouseY;
 
-    function mouseCoords(e) {
-        mouseX = e.pageX
-        mouseY = e.pageY
+    // =========================
+    // Mouse move
+    // =========================
+
+    document.addEventListener('mousemove', (e) => {
+
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursor.classList.remove('hidden');
+        aura.classList.remove('hidden');
+
+    });
+
+    // =========================
+    // Smooth animation
+    // =========================
+
+    function animate() {
+
+        // плавное отставание aura
+        auraX += (mouseX - auraX) * 0.12;
+        auraY += (mouseY - auraY) * 0.12;
+
+        // маленькая точка
+        cursor.style.transform =
+            `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
+        // aura
+        aura.style.transform =
+            `translate3d(${auraX - 20}px, ${auraY - 20}px, 0)`;
+
+        requestAnimationFrame(animate);
     }
 
-    body.addEventListener('mousemove', e => {
-        mouseCoords(e)
-        cursor.classList.remove('hidden')
-        follower.classList.remove('hidden')
-    })
+    animate();
 
-    gsap.to({}, .01, {
-        repeat: -1,
-        onRepeat: () => {
-            posX += (mouseX - posX) / 5
-            posY += (mouseY - posY) / 5
+    // =========================
+    // Hide on leave
+    // =========================
 
-            gsap.set(cursor, {
-                css: {
-                    left: mouseX,
-                    top: mouseY
-                }
-            })
+    document.addEventListener('mouseleave', () => {
+        cursor.classList.add('hidden');
+        aura.classList.add('hidden');
+    });
 
-            gsap.set(follower, {
-                css: {
-                    left: posX - 24,
-                    top: posY - 24
-                }
-            })
-        }
-    })
+    document.addEventListener('mouseenter', () => {
+        cursor.classList.remove('hidden');
+        aura.classList.remove('hidden');
+    });
 
-    for (let i = 0; i < links.length; i++) {
-        links[i].addEventListener('mouseover', () => {
-            cursor.classList.add('active')
-            follower.classList.add('active')
-        })
-        links[i].addEventListener('mouseout', () => {
-            cursor.classList.remove('active')
-            follower.classList.remove('active')
-        })
-    }
+    const hoverElements = document.querySelectorAll(
+        'a, button, .cursor-hover'
+    );
 
-    body.addEventListener('mouseout', () => {
-        cursor.classList.add('hidden')
-        follower.classList.add('hidden')
-    })
+    hoverElements.forEach(el => {
 
-})
+        el.addEventListener('mouseenter', () => {
+
+            aura.classList.add('link-hover');
+            cursor.classList.add('active');
+
+        });
+
+        el.addEventListener('mouseleave', () => {
+
+            aura.classList.remove('link-hover');
+            cursor.classList.remove('active');
+
+        });
+
+    });
+
+});

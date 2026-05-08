@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const plusBtn = event.querySelector('.calendar__plus');
         const content = event.querySelector('.calendar__content');
         
-        // Добавляем обработчик ТОЛЬКО на stroke (всю строку с датой и плюсом)
         stroke.addEventListener('click', (e) => {
-            // Закрываем все другие события
+
             allEvents.forEach(otherEvent => {
                 if (otherEvent !== event) {
                     const otherContent = otherEvent.querySelector('.calendar__content');
@@ -22,18 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     otherStroke.classList.remove('calendar__stroke--active');
                 }
             });
-            
-            // Переключаем текущее
+
             const isOpen = content.classList.contains('calendar__content--open');
             
             if (isOpen) {
-                // Закрываем
                 content.classList.remove('calendar__content--open');
                 plusBtn.textContent = '+';
                 plusBtn.setAttribute('aria-expanded', 'false');
                 stroke.classList.remove('calendar__stroke--active');
             } else {
-                // Открываем
                 content.classList.add('calendar__content--open');
                 plusBtn.textContent = '−';
                 plusBtn.setAttribute('aria-expanded', 'true');

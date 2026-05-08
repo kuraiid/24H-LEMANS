@@ -8,7 +8,7 @@
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: 42rem;
     text-align: right;
     min-height: 100%;
@@ -17,10 +17,31 @@
   &__social-list {
     @include flex(flex-end);
     gap: 1rem;
+    padding-top: 5rem;
   }
 
   &__image {
     width: 100%;
     margin-top: 4rem;
+  }
+
+
+  &__stats {
+    padding-top: 2rem;
+    @include flex(start, center);
+    gap: 15rem;
+
+  }
+  &__stats-item {
+    @include flex(start, flex-end);
+    gap: 2rem;
+
+  }
+  &__stats-number {
+    font-family: $font-family-title;
+    font-size: $font-size-xl-m;
+  }
+  &__stats-label {
+    max-width: 7ch;
   }
 }

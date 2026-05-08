@@ -78,10 +78,10 @@
   user-select: none;
 }
 &__stroke:hover {
-  opacity: 0.7;
+  transform: scale(1.014);
 }
 &__stroke--active {
-  color: #F0F0F0;
+  color: #0e328f;
 }
 &__date {
   pointer-events: none;

@@ -1,0 +1,64 @@
+body {
+    cursor: none;
+}
+#cursor.hidden,
+#aura.hidden {
+    opacity: 0;
+}
+#cursor {
+    width: 6px;
+    height: 6px;
+
+    background: #1e147a;
+    border-radius: 50%;
+
+    position: fixed;
+    z-index: 10001;
+
+    pointer-events: none;
+}
+
+#aura {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    background: rgba(45, 29, 190, 0.03);
+
+    backdrop-filter: blur(4px);
+
+    position: fixed;
+    z-index: 10000;
+
+    pointer-events: none;
+
+    transition:
+        width .3s ease,
+        height .3s ease,
+        transform .15s ease,
+        background .3s ease,
+        border-color .3s ease;
+}
+
+#aura.link-hover {
+    width: 70px;
+    height: 70px;
+
+    background: transparent;
+    backdrop-filter: blur(0px);
+
+    border-color: #1e147a;
+}
+
+#aura.image-hover {
+    width: 120px;
+    height: 120px;
+
+    background: transparent;
+
+
+    mix-blend-mode: difference;
+}
