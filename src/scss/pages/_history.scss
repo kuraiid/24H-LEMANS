@@ -1,0 +1,485 @@
+.section-full {
+    min-height: 100vh;
+}
+
+.section-dark {
+    color: $color-text-second;
+}
+
+.section-light {
+    color: $color-text-first;
+}
+
+.content-narrow {
+    max-width: 60rem;
+}
+
+.content-wide {
+    max-width: 120rem;
+}
+
+.section-date {
+    padding: 0.4rem 0.8rem;
+    background-color: $color-accent;
+    color: $color-text-second;
+
+    font-family: $font-family-accent;
+}
+
+.section-title {
+    padding-top: 5vh;
+}
+
+
+.banner {
+    background: url("../images/history/banner.png") center/cover no-repeat;
+    min-height: 100vh;
+
+    &__wrapper {
+        height: 100%;
+        min-height: 100vh;
+
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 4rem;
+    }
+
+    &__title {
+        max-width: 7ch;
+    }
+}
+
+
+.test {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    &__video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    &__wrapper {
+        padding-top: 5rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title {
+        padding-top: 5vh;
+    }
+
+    &__info {
+        padding-top: 15vh;
+    }
+
+    &__description {
+        padding-bottom: 5rem;
+    }
+}
+
+.founders {
+    &__wrapper {
+        padding-top: 5rem;
+    }
+
+    &__info {
+            @include flex(space-between, stretch);
+        gap: 4rem;
+         min-height: 100vh;
+     
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+            flex: 1;
+
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        &--left {
+            margin-top: 18rem;
+            gap: 3rem;
+
+            img {
+                &:nth-child(1) {
+                    width: 70%;
+                    transform: translateX(2rem);
+                }
+
+                &:nth-child(2) {
+                    width: 90%;
+                    transform: translateX(-3rem);
+                }
+            }
+        }
+
+        &--center {
+            margin-top: 5rem;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            max-width: 38rem;
+        }
+
+        &--right {
+            margin-top: -4rem;
+            gap: 8rem;
+
+            img {
+                &:nth-child(1) {
+                    width: 80%;
+                    transform: translateX(3rem);
+                }
+
+                &:nth-child(2) {
+                    width: 70%;
+                    transform: translateX(-2rem);
+                }
+            }
+        }
+    }
+}
+
+.engineers {
+    margin-top: 30rem;
+    &__info {
+        padding-top: 15vh;
+    }
+    &__description {
+        padding-top: 5rem;
+    }
+    &__lists {
+        margin-left: 5rem;
+        list-style-type: circle;
+    }
+}
+
+.photo {
+    background: url("../images/history/section.png") center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.start {
+    margin-top: 30rem;
+    &__info {
+        width: 100%;
+        padding-top: 5vh;
+
+    }
+    &__col {
+        display: flex;
+        gap: 4rem;
+        width: 100%;
+        align-items: flex-end;
+    }
+    
+    &__left {
+        flex: 0 0 45%; // Текст занимает 35%
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__description {
+        padding-top: 5rem;
+    }
+    &__right {
+        flex: 0 0 55%; // Картинка занимает 65%
+        
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    &__description--right {
+        text-align: right;
+    }
+    &__lists {
+        margin-left: 5rem;
+        list-style-type: circle;
+    }
+}
+
+.photo-two {
+    margin-top: 20rem;
+    background: url("../images/history/section-2.png") center/cover no-repeat;
+    min-height: 100vh;
+
+}
+
+.horizontal-scroll {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+    margin-top: 15rem;
+
+
+&__sticky {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+&__title {
+    margin-top: 25rem;
+    
+}
+&__track {
+    display: flex;
+    height: 100%;
+    will-change: transform;
+}
+
+
+}
+
+.slide {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.slide__image {
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide__title {
+    position: absolute;
+}
+
+.slide__text {
+    position: absolute;
+    max-width: 420px;
+}
+
+.slide--layout-1 {
+
+    .slide__image {
+        left: 0;
+        top: 0;
+
+        width: 45%;
+        height: 100%;
+    }
+
+    .slide__title {
+        left: 60%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .slide__text {
+        right: 80px;
+        bottom: 80px;
+    }
+}
+
+.slide--layout-2 {
+
+    .slide__image {
+        left: 80px;
+        top: 80px;
+
+        width: 45%;
+        height: 55%;
+    }
+
+    .slide__text {
+        right: 80px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+    .slide__title {
+        left: 50%;
+        bottom: 60px;
+
+        transform: translateX(-50%);
+    }
+}
+
+.slide--layout-3 {
+
+    .slide__image {
+        right: 80px;
+        top: 80px;
+
+        width: 45%;
+        height: 55%;
+    }
+
+    .slide__title {
+        top: 60px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    .slide__text {
+        left: 80px;
+        bottom: 80px;
+    }
+}
+
+.slide--layout-4 {
+
+    .slide__image {
+        left: 0;
+        top: 0;
+
+        width: 45%;
+        height: 100%;
+    }
+
+    .slide__title {
+        left: 60%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .slide__text {
+        top: 80px;
+        right: 80px;
+    }
+}
+
+
+.track {
+    margin-top: 25rem;
+    &__col {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        align-items: flex-end;
+    }
+    &__description {
+        padding-top: 8rem;
+    }
+}
+
+
+.photo-three {
+    margin-top: 20rem;
+    background: url("../images/history/section-3.png") center/cover no-repeat;
+    min-height: 100vh;
+
+    &__wrapper {
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 15rem;
+   
+    }
+    &__content {
+        max-width: 55rem;
+    }
+}
+
+
+.uniq {
+    margin-top: 20rem;
+
+    &__info {
+        padding-top: 5rem;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    &__context {
+        max-width: 800px;
+    }
+    &__subtitle {
+        padding-bottom: 5rem;
+    }
+}
+
+.quote {
+    margin-top: 20rem;
+
+    &__info {
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__col {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        
+        align-items: start;
+    }
+    &__right {
+        margin-top: 15rem;
+        padding-left: 5rem;
+    }
+    &__blockquote {
+        padding-top: 5rem;
+        text-align: center;
+        max-width: 800px;
+        font-weight: 600;
+    }
+    &__description
+    {
+        max-width: 400px;
+    }
+}
+
+
+.photo-four {
+    margin-top: 20rem;
+    background: url("../images/history/section-4.png") center/cover no-repeat;
+    min-height: 100vh;
+
+}
+
+.slogan {
+    &__content {
+        display: flex;
+        align-items: center;justify-content: center;
+    }
+    &__title {
+        text-align: center;
+        
+    }
+}

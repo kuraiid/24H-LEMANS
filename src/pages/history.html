@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГОНКА WEC 24h LE_mans - официальный сайт гонки, расписание, рейтинги и события">
+    <meta name="keywords" content="WEC, 24h Le Mans, автоспорт, гоночные события">
+    <meta name="author" content="Fairy">
+
+    <title>24H Lemans</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="content">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="bg-grid" aria-hidden="true" role="presentation"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">farry.</a>
+            <nav class="header__nav">
+                <button id="menu-button" aria-controls="fullscreenInfo">МЕНЮ +</button>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay" id="fullscreenInfo">
+        <div class="overlay__wrapper">
+            <div class="overlay__left">
+                <nav class="overlay__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="overlay__nav-link">Главная</a>
+                    <a href="history.html" class="overlay__nav-link">История</a>
+                    <a href="#" class="overlay__nav-link">Команды</a>
+                    <a href="#" class="overlay__nav-link">Трасса</a>
+                    <a href="#" class="overlay__nav-link">Билеты</a>
+                </nav>
+
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="../images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            <div class="overlay__center">
+                <button class="overlay__button-close" aria-label="Закрыть">✕</button>
+
+
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет"
+                    onclick="window.location.href='tickets.html'">
+                    <span class="button-buy__outer-circle">
+                        <span class="button-buy__inner-circle">
+                            <span class="button-buy__text">
+                                Купить билет
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="banner">
+            <div class="container">
+                <div class="banner__wrapper">
+                    <div class="banner__content">
+                        <h1 class="banner__title">
+                            НАЧАЛО
+                            ИСТОРИИ
+                            ЛЕ-МАНА
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="test section-full">
+            <video class="test__video" autoplay muted loop playsinline>
+                <source src="../video/bg-test.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="test__wrapper">
+                    <div class="test__content section-dark">
+                        <span class="test__date section-date">1920 г.</span>
+                        <h2 class="test__title content-wide">
+                            Испытание, а не гонка
+                        </h2>
+                        <div class="test__info">
+                            <p class="test__description content-narrow">
+                                В начале 1920-х годов в Европе доминировали классические Гран-при — чистая скорость,
+                                короткие дистанции, специализированные гоночные болиды. Но группу энтузиастов из
+                                Западного автомобильного клуба Франции (Automobile Club de l'Ouest, ACO) это не
+                                устраивало
+                            </p>
+                            <p class="test__description content-narrow">
+                                Они задумали нечто иное: соревнование, которое проверит не то, кто быстрее на короткой
+                                дистанции, а то, чей автомобиль лучше. Надёжность. Экономичность. Освещение в ночное
+                                время. Управляемость. Именно эти качества нужны обычному автомобилю, который покупают
+                                люди
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="founders section-full">
+            <div class="container">
+                <div class="founders__wrapper ">
+                    <div class="founders__contet section-light">
+                        <span class="founders__date section-date">1920 г.</span>
+                        <h2 class="founders__title section-title content-wide">
+                            Испытание, а не гонка
+                        </h2>
+                        <div class="founders__info">
+                            <div class="founders__col founders__col--left">
+                                <img src="../images/history/founders/1.png" alt=""><img src="" alt="">
+                                <img src="../images/history/founders/2.png" alt=""><img src="" alt="">
+
+                            </div>
+                            <div class="founders__col founders__col--center">
+                                <p>Легенда родилась на Парижском автосалоне в 1922 году, когда четыре человека
+                                    объединили усилия</p>
+                                <p>Именно Кокий предложил не 8-часовую гонку, как планировалось изначально, а 24-часовой
+                                    марафон — испытание, которое отделит действительно надёжные автомобили от тех, кому
+                                    есть что скрывать</p>
+                            </div>
+                            <div class="founders__col founders__col--right">
+                                <img src="../images/history/founders/3.png" alt="">
+                                <img src="../images/history/founders/4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="engineers section-full">
+            <div class="container">
+                <div class="engineers__wrapper ">
+                    <div class="engineers__contet section-light">
+                        <span class="engineers__date section-date">1923 г.</span>
+                        <h2 class="engineers__title content-wide section-title">
+                            «C’est impossible!» Это невозможно <br>— инженеры 1923 года
+                        </h2>
+                        <div class="engineers__info">
+
+                            <div class="engineers__col content-narrow ">
+                                <p class="engineers__description">Какая машина выдержит целые сутки непрерывной гонки?
+                                    По каким дорогам?
+                                <ul class="engineers__lists">
+                                    <li>Трасса: 17 км грунтовых и гравийных дорог с ямами</li>
+                                    <li>Погода в день старта: ужасная — дождь, ветер, град</li>
+
+                                </ul>
+                                </p>
+                                <p class="engineers__description">
+                                    33 автомобиля готовились выехать на этот ад. Зрители, несмотря на погоду, заполнили
+                                    трибуны. Никто ещё не знал, выдержит ли хоть одна машина 24 часа.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photo">
+
+        </section>
+
+        <section class="start section-full">
+            <div class="container">
+                <div class="start__wrapper ">
+                    <div class="start__contet section-light">
+                        <span class="start__date section-date">1923 г.</span>
+                        <h2 class="start__title content-wide section-title">
+                            Первый старт
+                            и рождение чемпионов
+                        </h2>
+                        <div class="start__info">
+
+                            <div class="start__col engineers__col--center ">
+                                <div class="start__left">
+                                    <div class="start__left-1">
+                                        <p class="start__description">Организаторы придумали хитрую систему: гонка
+                                            должна была стать трёхгодичным чемпионатом. Победителя объявляли бы только
+                                            через три года, суммируя результаты. К счастью, эту идею быстро забросили.
+                                        </p>
+                                        <p class="start__description">После 24 часов ада на колёсах первыми финишную
+                                            черту пересекли французы Андре Легаш и Рене Леонар на автомобиле Chenard &
+                                            Walcker.</p>
+                                        <p class="start__description">Их результаты:</p>
+                                        <ul class="start__lists">
+                                            <li>Трасса: 17 км грунтовых и гравийных дорог с ямами</li>
+                                            <li>Погода в день старта: ужасная — дождь, ветер, град</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="start__left-2">
+                                        <p class="start__description start__description--right">Организаторы придумали
+                                            хитрую систему: гонка
+                                            должна была стать трёхгодичным чемпионатом. Победителя объявляли бы только
+                                            через три года, суммируя результаты. К счастью, эту идею быстро забросили.
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="start__right">
+                                    <img src="../images/history/start.png" alt="" class="start__img">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo-two">
+
+        </section>
+        <div class="container">
+            <h2 class="horizontal-scroll__title content-wide section-title">
+                Эпохи <br>противостояний
+            </h2>
+        </div>
+        <section class="horizontal-scroll js-horizontal-scroll ">
+
+            <div class="horizontal-scroll__sticky">
+                <div class="horizontal-scroll__track">
+
+                    <section class="horizontal-scroll__slide slide slide--layout-1">
+                        <img src="../images/history/horizontal/1.png" alt="" class="slide__image">
+
+                        <h2 class="slide__title">
+                            1966: <br>
+                            Ford vs Ferrari
+                        </h2>
+
+                        <p class="slide__text">
+                            Ford против Ferrari — главная битва, о которой сняли блокбастер. Генри Форд II хотел унизить
+                            итальянцев, отказавшихся от сделки. Миллионы долларов, Ford GT40 — и в 1966 году Ford
+                            занимает первые три места! Но финиш обернулся скандалом: победителем объявили Брюса
+                            Макларена, а не Кена Майлза, который вёл гонку все 24 часа. Майлз погиб на тестах через год.
+                        </p>
+                    </section>
+
+
+                    <section class="horizontal-scroll__slide slide slide--layout-2">
+                        <img src="../images/history/horizontal/2.png" alt="" class="slide__image">
+
+                        <h2 class="slide__title">
+                            1970-1980: Porsche
+                        </h2>
+
+                        <p class="slide__text">
+                            Porsche — самый успешный производитель в истории Ле-Мана (19 побед). Всё началось с Porsche
+                            917 — первого автомобиля, преодолевшего рубеж 360 км/ч на прямой Мюльсан. В 1980-е Porsche
+                            956/962 доминировали в эпоху Group C и до сих пор считаются эталоном гоночных машин
+                            выносливости.
+                        </p>
+                    </section>
+
+
+                    <section class="horizontal-scroll__slide slide slide--layout-3">
+                        <img src="../images/history/horizontal/3.png" alt="" class="slide__image">
+
+                        <h2 class="slide__title">
+                            1991: <br>
+                            Mazda
+                        </h2>
+
+                        <p class="slide__text">
+                            Главное чудо 1990-х. Mazda 787B с роторно-поршневым двигателем звучала как эскадрилья
+                            истребителей. Она выиграла в 1991 году — единственная победа японского производителя в
+                            абсолютном зачёте за всю историю. Роторные двигатели вскоре запретили, но эта победа
+                            осталась легендой.
+                        </p>
+                    </section>
+
+
+                    <section class="horizontal-scroll__slide slide slide--layout-4">
+                        <img src="../images/history/horizontal/4.png" alt="" class="slide__image">
+
+                        <h2 class="slide__title">
+                            2000-2006: <br>
+                            Audi
+                        </h2>
+
+                        <p class="slide__text">
+                            Эра дизеля и гибридов. Audi выиграла 7 раз за 9 лет. Сначала с бензиновым R8, затем с
+                            дизельным R10 TDI. Именно в этот период датчанин Том Кристенсен выиграл 9 раз — рекорд,
+                            который не побит до сих пор. Audi также первой внедрила гибридные технологии и сделала их
+                            победными.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="track section-full">
+            <div class="container">
+                <div class="track__wrapper ">
+                    <div class="track__content section-light">
+                        <span class="track__date section-date">1923 г.</span>
+                        <h2 class="track__title content-wide section-title">
+                            Первый старт
+                            и рождение чемпионов
+                        </h2>
+                        <div class="track__info">
+
+                            <div class="track__col track__col--center ">
+                                <div class="track__left">
+
+                                    <p class="track__description">длина круга — 13 626 метров.
+                                    </p>
+                                    <p class="track__description">Это одна из самых длинных трасс в мировом автоспорте.
+                                    </p>
+                                    <p class="track__description">В отличие от специально построенных автодромов в Монце
+                                        или Нюрбургринге, трассу в Ле-Мане «нашли» на обычных французских дорогах.
+                                        Это полуперманентная трасса — 9 из 13,6 километров — обычные дороги общего
+                                        пользования, которые перекрывают на время гонки. Остальное — постоянный
+                                        автодром..</p>
+
+                                </div>
+
+
+                                <div class="track__right">
+                                    <img src="../images/history/track.png" alt="" class="start__img">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="photo-three">
+            <div class="container">
+                <div class="photo-three__wrapper">
+                    <div class="photo-three__content section-dark">
+                        <p class="track__description">Прямая, на которой рождались рекорды
+                            Знаменитая прямая Мюльсан — почти 6 километров без единого поворота.
+                        </p>
+                        <p class="start__description">Здесь машины разгонялись до скоростей, которые сегодня кажутся
+                            фантастикой:</p>
+                        <ul class="start__lists">
+                            <li>1971: Porsche 917 — 362 км/ч</li>
+                            <li>1978: Porsche 935 — 367 км/ч</li>
+                            <li>1988: WM Peugeot — 407 км/ч</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="uniq section-full">
+            <div class="container">
+                <div class="uniq__wrapper ">
+                    <div class="uniq__content section-light">
+                        <h2 class="uniq__title content-wide section-title">
+                            Традиции, которые стали легендами
+                        </h2>
+                        <div class="uniq__info">
+
+                            <div class="uniq__row  ">
+
+                                <div class="uniq__context">
+
+
+                                    <h3 class="uniq__subtitle">Le Mans start: безумный старт</h3>
+
+                                    <p class="uniq__description">До 1969 года гонка начиналась с того, что водители
+                                        стояли на одной стороне трассы, а машины — на другой. По взмаху французского
+                                        флага пилоты бежали через дорогу, запрыгивали в автомобили и уносились прочь.
+                                    </p>
+
+                                </div>
+                                <div class="uniq__right">
+                                    <img src="../images/history/traditionals/1.png" alt="" class="start__img">
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="uniq__row  ">
+                                <div class="uniq__right">
+                                    <img src="../images/history/traditionals/2.png" alt="" class="start__img">
+                                </div>
+                                <div class="uniq__context">
+
+
+                                    <h3 class="uniq__subtitle">Шампанское на подиуме: спасибо Дэну Герни</h3>
+
+                                    <p class="uniq__description">1967 год. Американец Дэн Герни выигрывает гонку на Ford
+                                        GT40. На подиуме он получает бутылку шампанского. Внизу — главный босс Ford
+                                        Генри Форд II, Кэрролл Шелби и журналисты, которые предрекали ему провал.
+                                        Герни встряхивает бутылку и поливает всех вокруг.
+                                        Эту фотографию облетел весь мир. И с тех пор так делает каждый победитель в
+                                        каждой гонке на планете.
+                                    </p>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="uniq__row  ">
+
+                                <div class="uniq__context">
+
+
+                                    <h3 class="uniq__subtitle">Парад пилотов</h3>
+
+                                    <p class="uniq__description"> В пятницу перед гонкой все 60+ экипажей проезжают по
+                                        центру города Ле-Ман на старинных автомобилях. 250 000 зрителей выстраиваются
+                                        вдоль улиц, чтобы увидеть пилотов в неформальной обстановке.</p>
+
+                                </div>
+
+                                <div class="uniq__right">
+                                    <img src="../images/history/traditionals/3.png" alt="" class="start__img">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="quote section-full">
+            <div class="container">
+                <div class="quote__wrapper ">
+                    <div class="quote__content section-light">
+                        <h2 class="quote__title content-wide section-title">
+                            "
+                        </h2>
+                        <div class="quote__info">
+
+                            <div class="quote__col track__col--center ">
+                                <div class="quote__left">
+                                    <p class="quote__description"> 24 часа Ле-Ман — это не только рекорды, трагедии и технологии. Это ещё и 250 000 человек, которые каждую третью субботу июня собираются у трассы. Они ставят палатки, жарят сосиски, спорят о тактике до хрипоты — и в четыре часа дня замирают, когда над трассой проносится французский триколор.</p>
+
+                                </div>
+
+
+                                <div class="quote__center">
+                                    <img src="../images/history/author.png" alt="" class="start__img">
+                                </div>
+                                <div class="quote__right">
+                                    <p class="quote__description">За 100 лет гонка пережила войны, экономические кризисы и смертельные аварии. Но традиции остались. Парад пилотов в центре Ле-Мана. Знаменитости, взмахивающие флагом. И тот самый момент, когда 62 машины срываются с места под рев моторов.</p>
+
+                                </div>
+                                
+                            </div>
+                        <blockquote class="quote__blockquote">И это чувство — когда ты стоишь на трибуне в три часа ночи, смотришь на фары, летящие по прямой Мюльсан, и понимаешь: жизнь — это гонка. Всё остальное — просто ожидание.</blockquote>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="photo-four">
+
+        </section>
+        <section class="slogan ">
+            <div class="container">
+                <div class="slogan__wrapper ">
+                    <div class="slogan__content section-light">
+                        <h2 class="slogan__title content-wide section-title">
+                            Le mane <br>
+ГОНКА <br>
+талантливых ПИЛОТОВ
+                        </h2>
+                
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/table-hover.js"></script>
+
+    <script src="../js/countdown.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/scroll.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
