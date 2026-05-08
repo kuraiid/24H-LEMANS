@@ -13,7 +13,7 @@
 ---
 
 ## Установка и запуск
-Если есть впн, можно попробовать посомтреть сат загружанный уже  на сервер - https://24h-lemans.tllswiti.workers.dev/
+Если есть впн, можно попробовать посомтреть сайт загружанный уже  на сервер - https://24h-lemans.tllswiti.workers.dev/
 ### 1. Клонировать репозиторий
 ```
 git clone https://github.com/kuraiid/24H-LEMANS.git
