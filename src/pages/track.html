@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГОНКА WEC 24h LE_mans - официальный сайт гонки, расписание, рейтинги и события">
+    <meta name="keywords" content="WEC, 24h Le Mans, автоспорт, гоночные события">
+    <meta name="author" content="Fairy">
+
+    <title>24H Lemans</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="content">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="bg-grid" aria-hidden="true" role="presentation"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">farry.</a>
+            <nav class="header__nav">
+                <button id="menu-button" aria-controls="fullscreenInfo">МЕНЮ +</button>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay" id="fullscreenInfo">
+        <div class="overlay__wrapper">
+            <div class="overlay__left">
+                <nav class="overlay__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="overlay__nav-link">Главная</a>
+                    <a href="history.html" class="overlay__nav-link">История</a>
+                    <a href="teams.html" class="overlay__nav-link">Команды</a>
+                    <a href="#" class="overlay__nav-link">Трасса</a>
+                    <a href="#" class="overlay__nav-link">Билеты</a>
+                </nav>
+
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="../images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            <div class="overlay__center">
+                <button class="overlay__button-close" aria-label="Закрыть">✕</button>
+
+
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет"
+                    onclick="window.location.href='tickets.html'">
+                    <span class="button-buy__outer-circle">
+                        <span class="button-buy__inner-circle">
+                            <span class="button-buy__text">
+                                Купить билет
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            СПИСОК <br>
+                            КОМАНД
+                        </h1>
+                        <div class="hero__info">
+                            <p class="hero__description">
+                                Ежегодная 24-часовая автомобильная гонка на выносливость, которая проводится на трассе
+                                «Сарта» (Circuit de la Sarthe) близ города Ле-Ман во Франции. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero__img track-map">
+
+                        <img src="../images/track.png" class="track-map__img" alt="">
+
+                        <div class="track-point cursor-hover" style="top: 93%; left: 21%;">
+                            <div class="track-point__dot " ></div>
+                            <div class="track-point__popup">
+                                Трасса плавно уходит вправо, проходя под знаменитым мостом Dunlop. Это скоростной поворот
+                                на подъёме, который проходится практически без сброса газа.
+                            </div>
+                        </div>
+                        <div class="track-point" style="top: 90%; left: 17%;">
+                            <div class="track-point__dot"></div>
+                            <div class="track-point__popup">
+                                Первое серьёзное торможение на круге. После него подъём продолжается, трасса уходит чуть
+                                правее, через старую въездную эстакаду к мосту Данлоп (сейчас она не используется).
+                            </div>
+                        </div>
+                        <div class="track-point" style="top: 79%; left: 7%;">
+                            <div class="track-point__dot"></div>
+                            <div class="track-point__popup">
+                                Знаменитый спуск — быстрая связка правого и левого поворотов. Пилоты пролетают этот
+                                амфитеатр, лавируя между поребриками. Требует точной траектории.
+                            </div>
+                        </div>
+                        <div class="track-point" style="top: 61%; left: 80%;">
+                            <div class="track-point__dot"></div>
+                            <div class="track-point__popup">
+                                Сразу после поворота Мульсан следует знаменитая связка «Индианаполис» — крутой левый поворот с высоким внутренним бордюром, требующим максимально точного касания колесом, за которым сразу начинается длинный разгонный правый изгиб. Название отсылает к американскому овалу Indianapolis Motor Speedway — когда-то профиль и угол наклона этого участка напоминали легендарную трассу в США.
+                            </div>
+                        </div>
+                        <div class="track-point" style="top: 80%; left: 62%;">
+                                <div class="track-point__dot"></div>
+                                <div class="track-point__popup">
+                                    Вся эта секция — учебник аэродинамики. На скоростях за 200 км/ч ты висишь вниз головой в быстрых поворотах, а машина держится только за счёт прижимной силы. Одна неверная нога на газу — и ты уже целуешь стену.
+                                </div>
+                        </div>
+        </section>
+
+        <section class="specification">
+            <div class="container">
+                <div class="specification__wrapper">
+                    <h2 class="specification__title">Почему эта
+трасса уникальна?</h2>
+                    <div class="specification__content">
+                        <div class="specification__left">
+                            
+                            <img src="../images/photo-track.png" alt="" loading="lazy">
+                            <p class="specification__description">9 из 13,6 км — обычные дороги департамента Сарта. В любой другой день вы можете проехать на своей машине по прямой Мюльсан (под названием D338) или через поворот Арнаж. Но раз в году эти дороги перекрывают, и по ним летят 350 км/ч</p>
+                            <p class="specification__description">9 из 13,6 км — обычные дороги департамента Сарта. В любой другой день вы можете проехать на своей машине по прямой Мюльсан (под названием D338) или через поворот Арнаж. Но раз в году эти дороги перекрывают, и по ним летят 350 км/ч</p>
+                        </div>
+                        <div class="specification__right">
+                            <img src="../images/photo-track2.png" alt="">
+                            <p class="specification__description">Только Северная петля Нюрбургринга длиннее (20,8 км), но там не едут 340 км/ч на прямых участках.</p>
+                            <div class="specification__right-img">
+                            <img src="../images/photo-track2.png" alt="">
+                            <img src="../images/photo-track2.png" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detailed">
+            <div class="container">
+                <div class="detailed__wrapper">
+                    <div class="detailed__content">
+                        <div class="detailed__detaile detailed__detaile--left">
+                            <p class="detailed__number">13 626 м</p>
+                            <p class="detailed__label">Полная длина круга</p>
+                        </div>
+                        <div class="detailed__detaile detailed__detaile--center">
+                            <p class="detailed__number">38</p>
+                            <p class="detailed__label">Количество поворотов</p>
+                        </div>
+                        <div class="detailed__detaile detailed__detaile--right">
+                            <p class="detailed__number">~345 км/ч</p>
+                            <p class="detailed__label">Максимальная скорость сегодня</p>
+                        </div>
+                        <div class="detailed__detaile detailed__detaile--left">
+                            <p class="detailed__number">407 км/ч</p>
+                            <p class="detailed__label">Рекорд скорости истории</p>
+                        </div>
+                        <div class="detailed__detaile detailed__detaile--center">
+                            <p class="detailed__number">3:17.297 </p>
+                            <p class="detailed__label">Рекорд круга в гонке</p>
+                        </div>
+                        <div class="detailed__detaile detailed__detaile--right">
+                            <p class="detailed__number">250 000</p>
+                            <p class="detailed__label">Количество зрителей на трассе</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery"> 
+
+        </section>
+
+    </main>
+
+    <footer class="footer" style="margin-top: 0%;">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                    alt="Facebook" class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                    </ul>
+
+                    <div class="footer__social-info">
+                        <p class="footer__phone"><a href="tel:+79000000000" class="footer__link"
+                                rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                        <p class="footer__email"><a href="mailto:info@lm24wheel.ru" class="footer__link"
+                                rel="noopener noreferrer">info@lm24.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__logo" href="index.html">farry.</a>
+
+                    <a class="footer__link footer__link--left" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--center" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--right" href="#">Настройки конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/table-hover.js"></script>
+
+    <script src="../js/countdown.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/track.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

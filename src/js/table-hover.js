@@ -10,26 +10,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 { position: 1, number: 51, team: 'Ferrari', photo: '../images/teams/hypercar/ferrari51.jpg', points: 385 },
                 { position: 2, number: 15, team: 'BMW', photo: '../images/teams/hypercar/bmw15.jpg', points: 350 },
                 { position: 3, number: 83, team: 'Ferrari', photo: '../images/teams/hypercar/ferrari83.jpg', points: 320 },
-                { position: 4, number: 51, team: 'Ferrari', photo: '../images/teams/hypercar/bmw15.jpg', points: 298 },
-                { position: 5, number: 6, team: 'PEUGEOT', photo: '../images/teams/hypercar/bmw15.jpg', points: 275 },
+                { position: 4, number: 7, team: 'Aston Martin', photo: '../images/teams/hypercar/aston007.jpg', points: 298 },
+                { position: 5, number: 8, team: 'Toyota', photo: '../images/teams/hypercar/toyota8', points: 275 },
+                { position: 6, number: 12, team: 'Cadillac', photo: '../images/teams/hypercar/cadillac12.jpg"', points: 275 },
+                { position: 7, number: 17, team: 'Genesis', photo: '../images/teams/hypercar/genesis17.jpg', points: 275 },
+
             ]
         },
         lmp2: {
             name: 'LMP2',
             folder: 'lmp2',
             data: [
-                { position: 1, number: 41, team: 'Team WRT', photo: '../images/teams/lmp2/wrt.jpg', points: 185 },
-                { position: 2, number: 22, team: 'United Autosports', photo: '../images/teams/lmp2/united.jpg', points: 170 },
-                { position: 3, number: 37, team: 'Cool Racing', photo: '../images/teams/lmp2/cool.jpg', points: 155 },
+                { position: 1, number: 3, team: 'DKR ENGINEERING', photo: '../images/teams/lmp2/dkr3.jpg', points: 185 },
+                { position: 2, number: 23, team: 'ALGARVE PRO RACING', photo: '../images/teams/lmp2/algarve25.jpg', points: 170 },
+                { position: 3, number: 9, team: 'PROTON COMPETITIO', photo: '../images/teams/lmp2/proton9.jpg', points: 155 },
             ]
         },
         lmgte: {
             name: 'LMGT3',
             folder: 'lmgte',
             data: [
-                { position: 1, number: 92, team: 'Porsche Manthey', photo: '../images/teams/lmgte/porsche-gt.jpg', points: 165 },
-                { position: 2, number: 46, team: 'Team WRT', photo: '../images/teams/lmgte/bmw.jpg', points: 150 },
-                { position: 3, number: 88, team: 'Ford Multimatic', photo: '../images/teams/lmgte/ford.jpg', points: 140 },
+                { position: 1, number: 81, team: 'TF SPORT', photo: '../images/teams/lmgt3/tf9.jpg', points: 165 },
+                { position: 2, number: 9, team: 'GARAGE 59', photo: '../images/teams/lmgt3/garage23.jpg', points: 150 },
+                { position: 3, number: 21, team: 'VISTA AF CORSE', photo: '../images/teams/lmgt3/vista21.jpg', points: 140 },
             ]
         }
     };

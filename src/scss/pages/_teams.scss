@@ -1,5 +1,5 @@
 .teams {
-    margin-top: 20rem;
+    margin-top: 15rem;
 
     &__cards {
         display: grid;
@@ -35,11 +35,19 @@
         gap: 0.9rem;
 
     }
-
+    &__icon {
+        width:4rem;
+        height: auto;
+        opacity: 0.8;
+    }
+    &__icon--more {
+        width:6.5rem;
+    }
     &__name,
     &__number {
         font-weight: 600;
         font-size: $font-size-l;
+        max-width: 180px;
     }
 
     &__link {
@@ -55,6 +63,12 @@
         width: 100%;
         height: 180px;
         object-fit: contain;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        width: 100%;
     }
 }
 
