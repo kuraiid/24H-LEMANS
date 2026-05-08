@@ -4,29 +4,29 @@ document.addEventListener('DOMContentLoaded', () => {
         hypercar: {
             name: 'HYPERCAR',
             data: [
-                { position: 1, number: 51, team: 'Ferrari', photo: '../images/teams/hypercar/ferrari51.jpg', points: 385 },
-                { position: 2, number: 15, team: 'BMW', photo: '../images/teams/hypercar/bmw15.jpg', points: 350 },
-                { position: 3, number: 83, team: 'Ferrari', photo: '../images/teams/hypercar/ferrari83.jpg', points: 320 },
-                { position: 4, number: 7, team: 'Aston Martin', photo: '../images/teams/hypercar/aston007.jpg', points: 298 },
-                { position: 5, number: 8, team: 'Toyota', photo: '../images/teams/hypercar/toyota8.jpg', points: 275 },
-                { position: 6, number: 12, team: 'Cadillac', photo: '../images/teams/hypercar/cadillac12.jpg', points: 275 },
-                { position: 7, number: 17, team: 'Genesis', photo: '../images/teams/hypercar/genesis17.jpg', points: 275 },
+                { position: 1, number: 51, team: 'Ferrari', photo: 'src/images/teams/hypercar/ferrari51.jpg', points: 385 },
+                { position: 2, number: 15, team: 'BMW', photo: 'src/images/teams/hypercar/bmw15.jpg', points: 350 },
+                { position: 3, number: 83, team: 'Ferrari', photo: 'src/images/teams/hypercar/ferrari83.jpg', points: 320 },
+                { position: 4, number: 7, team: 'Aston Martin', photo: 'src/images/teams/hypercar/aston007.jpg', points: 298 },
+                { position: 5, number: 8, team: 'Toyota', photo: 'src/images/teams/hypercar/toyota8.jpg', points: 275 },
+                { position: 6, number: 12, team: 'Cadillac', photo: 'src/images/teams/hypercar/cadillac12.jpg', points: 275 },
+                { position: 7, number: 17, team: 'Genesis', photo: 'src/images/teams/hypercar/genesis17.jpg', points: 275 },
             ]
         },
         lmp2: {
             name: 'LMP2',
             data: [
-                { position: 1, number: 3, team: 'DKR ENGINEERING', photo: '../images/teams/lmp2/dkr3.jpg', points: 185 },
-                { position: 2, number: 23, team: 'ALGARVE PRO RACING', photo: '../images/teams/lmp2/algarve25.jpg', points: 170 },
-                { position: 3, number: 9, team: 'PROTON COMPETITION', photo: '../images/teams/lmp2/proton9.jpg', points: 155 },
+                { position: 1, number: 3, team: 'DKR ENGINEERING', photo: 'src/images/teams/lmp2/dkr3.jpg', points: 185 },
+                { position: 2, number: 23, team: 'ALGARVE PRO RACING', photo: 'src/images/teams/lmp2/algarve25.jpg', points: 170 },
+                { position: 3, number: 9, team: 'PROTON COMPETITION', photo: 'src/images/teams/lmp2/proton9.jpg', points: 155 },
             ]
         },
         lmgte: {
             name: 'LMGT3',
             data: [
-                { position: 1, number: 81, team: 'TF SPORT', photo: '../images/teams/lmgt3/tf9.jpg', points: 165 },
-                { position: 2, number: 9, team: 'GARAGE 59', photo: '../images/teams/lmgt3/garage23.jpg', points: 150 },
-                { position: 3, number: 21, team: 'VISTA AF CORSE', photo: '../images/teams/lmgt3/vista21.jpg', points: 140 },
+                { position: 1, number: 81, team: 'TF SPORT', photo: 'src/images/teams/lmgt3/tf9.jpg', points: 165 },
+                { position: 2, number: 9, team: 'GARAGE 59', photo: 'src/images/teams/lmgt3/garage23.jpg', points: 150 },
+                { position: 3, number: 21, team: 'VISTA AF CORSE', photo: 'src/images/teams/lmgt3/vista21.jpg', points: 140 },
             ]
         }
     };
