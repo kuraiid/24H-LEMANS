@@ -24,8 +24,6 @@ class HorizontalScroll {
         this.maxScroll =
             this.track.scrollWidth - window.innerWidth;
 
-        // Даем секции высоту:
-        // экран + длина горизонтального скролла
         this.section.style.height =
             `${window.innerHeight + this.maxScroll}px`;
     }
@@ -40,7 +38,7 @@ class HorizontalScroll {
             Math.min(scrollProgress, this.maxScroll));
 
         this.track.style.transform =
-            `translateX(-${current}px)`;
+            `translateX(-${current* 0.5}px)`;
     }
 }
 

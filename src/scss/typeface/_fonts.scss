@@ -3,22 +3,24 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Tektur/static/Tektur-Regular.ttf") format("truetype");
-
+  src: url("../fonts/Tektur/static/Tektur-Regular.woff2") format("woff2"),
+       url("../fonts/Tektur/static/Tektur-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
-
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.woff2") format("woff2"),
+       url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Orbitron/static/Orbitron-Regular.ttf") format("truetype");
-
+  src: url("../fonts/Orbitron/static/Orbitron-Regular.woff2") format("woff2"),
+       url("../fonts/Orbitron/static/Orbitron-Regular.ttf") format("truetype");
 }

@@ -11,6 +11,7 @@
     <title>24H Lemans</title>
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.svg" type="image/x-icon">
 </head>
 
 <body class="content">
@@ -34,7 +35,7 @@
                     <a href="history.html" class="overlay__nav-link">История</a>
                     <a href="teams.html" class="overlay__nav-link">Команды</a>
                     <a href="track.html" class="overlay__nav-link">Трасса</a>
-                    <a href="#" class="overlay__nav-link">Билеты</a>
+                    <a href="tickets.html" class="overlay__nav-link">Билеты</a>
                 </nav>
 
                 <div class="overlay__left-bottom">
@@ -45,10 +46,10 @@
                                         alt="Facebook" class="overlay__icon"></a></li>
                             <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
                                     rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
+                                        alt="Myspace Circled" class="overlay__icon"></a></li>
                             <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
                                     rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
+                                        alt="Pinterest" class="overlay__icon"></a></li>
                         </ul>
 
                         <div class="overlay__social-info">
@@ -75,11 +76,12 @@
                 <button class="overlay__button-close" aria-label="Закрыть">✕</button>
 
 
-                <button class="overlay__button-buy button-buy" aria-label="Купить билет" onclick="window.location.href='tickets.html'">
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет"
+                    onclick="window.location.href='tickets.html'">
                     <span class="button-buy__outer-circle">
                         <span class="button-buy__inner-circle">
                             <span class="button-buy__text">
-                                Купить  билет
+                                Купить билет
                             </span>
                         </span>
                     </span>
@@ -101,7 +103,9 @@
                         </h1>
                         <div class="hero__info">
                             <p class="hero__description">
-                                Крупнейшее мировое соревнование по автомобильным гонкам на выносливость. Этап чемпионата мира FIA WEC, ежегодно проходящий на трассе «Сарта» (Circuit de la Sarthe) в окрестностях Ле-Мана, Франция.
+                                Крупнейшее мировое соревнование по автомобильным гонкам на выносливость. Этап чемпионата
+                                мира FIA WEC, ежегодно проходящий на трассе «Сарта» (Circuit de la Sarthe) в
+                                окрестностях Ле-Мана, Франция.
                             </p>
                             <ul class="hero__social-list">
                                 <li class="hero__social-item"><a class="hero__social-link" href="#"
@@ -116,7 +120,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="../images/banner-img.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
+                    <img src="../images/banner-index.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
                         class="hero__image" loading="lazy" width="600" height="400">
                 </div>
             </div>
@@ -192,7 +196,7 @@
 
                     <div class="leaderboard__list" id="leaderboardList"></div>
                     <div class="leaderboard__more">
-                        <a href="#" class="leaderboard__link">Узнать больше -></a>
+                        <a href="teams.html" class="leaderboard__link">Узнать больше -></a>
                     </div>
                 </div>
             </div>
@@ -201,6 +205,8 @@
         <section class="countdown">
             <div class="container">
                 <div class="countdown__wrapper">
+                    <p class="countdown__subtitle">до начала гонки</p>
+
                     <div class="countdown__timer">
                         <div class="countdown__item">
                             <span class="countdown__number" id="days">00</span>
@@ -235,7 +241,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Традиционная церемония взвешивания и технической инспекции в центре Ле-Мана. Обязательная административная проверка экипажей и соответствия машин регламенту ACO. Первый официальный контакт публики с гоночной техникой</p>
+                                    <p class="calendar__description">Традиционная церемония взвешивания и технической
+                                        инспекции в центре Ле-Мана. Обязательная административная проверка экипажей и
+                                        соответствия машин регламенту ACO. Первый официальный контакт публики с гоночной
+                                        техникой</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -252,7 +261,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Единственная возможность для команд провести испытания на трассе «Сарта» до начала гоночного уик-энда. Две сессии свободных заездов, тестирование аэродинамического пакета и силовых установок в реальных условиях. Старт гонок поддержки Ligier European Series.</p>
+                                    <p class="calendar__description">Единственная возможность для команд провести
+                                        испытания на трассе «Сарта» до начала гоночного уик-энда. Две сессии свободных
+                                        заездов, тестирование аэродинамического пакета и силовых установок в реальных
+                                        условиях. Старт гонок поддержки Ligier European Series.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -269,7 +281,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Пауза в спортивной программе. День открытых дверей на трассе: экскурсии по боксам, автограф-сессии пилотов, Pit Stop Challenge. Открытие выставочных зон Hydrogen Village и Manufacturers Village, демонстрирующих инновационные разработки в гоночном инжиниринге.</p>
+                                    <p class="calendar__description">Пауза в спортивной программе. День открытых дверей
+                                        на трассе: экскурсии по боксам, автограф-сессии пилотов, Pit Stop Challenge.
+                                        Открытие выставочных зон Hydrogen Village и Manufacturers Village,
+                                        демонстрирующих инновационные разработки в гоночном инжиниринге.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -286,7 +301,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Открытие основной программы. Первая сессия свободных заездов для всех классов, начало квалификационных заездов Ferrari Challenge и Porsche Carrera Cup. Вечерняя квалификация №1 для LMP2, LMGT3 и Hypercar. Ночные свободные заезды с 22:00 до полуночи.</p>
+                                    <p class="calendar__description">Открытие основной программы. Первая сессия
+                                        свободных заездов для всех классов, начало квалификационных заездов Ferrari
+                                        Challenge и Porsche Carrera Cup. Вечерняя квалификация №1 для LMP2, LMGT3 и
+                                        Hypercar. Ночные свободные заезды с 22:00 до полуночи.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -303,7 +321,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Кульминация квалификационной фазы — сессии Hyperpole. Определение обладателей поул-позиций в классах LMP2, LMGT3 и Hypercar на стартовой решетке марафона. Финальная 4-часовая ночная тренировка для проверки систем в условиях минимальной освещенности.</p>
+                                    <p class="calendar__description">Кульминация квалификационной фазы — сессии
+                                        Hyperpole. Определение обладателей поул-позиций в классах LMP2, LMGT3 и Hypercar
+                                        на стартовой решетке марафона. Финальная 4-часовая ночная тренировка для
+                                        проверки систем в условиях минимальной освещенности.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -320,7 +341,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">День без заездов основных классов WEC. Проведение гонки поддержки Road to Le Mans. Традиционный парад пилотов по улицам города. Открытие доступа публики на трассу для прогулок и фото. Вечерняя концертная программа.</p>
+                                    <p class="calendar__description">День без заездов основных классов WEC. Проведение
+                                        гонки поддержки Road to Le Mans. Традиционный парад пилотов по улицам города.
+                                        Открытие доступа публики на трассу для прогулок и фото. Вечерняя концертная
+                                        программа.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -336,7 +360,10 @@
                             </div>
                             <div class="calendar__content">
                                 <div class="calendar__content-left">
-                                    <p class="calendar__description">Главное событие. Утренний warm-up и финальные заезды категорий поддержки. Церемония открытия на стартовой решетке. Старт 94-го марафона «24 часа Ле-Мана» в субботу в 16:00. Непрерывное 24-часовое движение. Финиш и церемония награждения победителей в воскресенье.</p>
+                                    <p class="calendar__description">Главное событие. Утренний warm-up и финальные
+                                        заезды категорий поддержки. Церемония открытия на стартовой решетке. Старт 94-го
+                                        марафона «24 часа Ле-Мана» в субботу в 16:00. Непрерывное 24-часовое движение.
+                                        Финиш и церемония награждения победителей в воскресенье.</p>
                                     <a href="" class="calendar__link">Узнать больше -></a>
                                 </div>
                                 <div class="calendar__content-right">
@@ -379,11 +406,11 @@
 
                     <div class="slider__track-wrapper">
                         <div class="slider__track">
-                            <!-- Слайд 1 -->
+
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/1.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/1.jpg" alt="предварительный список участников" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
@@ -402,11 +429,12 @@
                                 </article>
                             </div>
 
-                            <!-- Слайд 2 -->
+
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/2.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/2.jpg" alt="пилот-испытателем
+                                                команды Peugeot" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
@@ -425,7 +453,8 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/3.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/3.jpg" alt="Сара Бови, Дэвид Кларк и Фредерик Соссе на 94-й
+                                                церемонии вручения премии" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
@@ -443,15 +472,20 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/4.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/4.jpg" alt="Состав участников «24 часов Ле-Мана» в 2026" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
-                                            <h4 class="news-card__title">Состав участников «24 часов Ле-Мана» в 2026 году</h4>
+                                            <h4 class="news-card__title">Состав участников «24 часов Ле-Мана» в 2026
+                                                году</h4>
                                             <time class="news-card__date" datetime="2026-06-15">27 апреля 2026</time>
                                         </div>
                                         <div class="news-card__bot-inf">
-                                            <p class="news-card__text">94-я гонка «24 часа Ле-Мана», которая пройдет 13–14 июня, обещает быть великолепной. Величайшие автопроизводители мира доверили свои машины самым опытным гонщикам, и все они стремятся вписать свои имена в историю. Третий этап чемпионата мира по гонкам на выносливость, вероятно, будет.</p>
+                                            <p class="news-card__text">94-я гонка «24 часа Ле-Мана», которая пройдет
+                                                13–14 июня, обещает быть великолепной. Величайшие автопроизводители мира
+                                                доверили свои машины самым опытным гонщикам, и все они стремятся вписать
+                                                свои имена в историю. Третий этап чемпионата мира по гонкам на
+                                                выносливость, вероятно, будет.</p>
                                         </div>
                                     </div>
                                 </article>
@@ -459,15 +493,21 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/5.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/5.jpg" alt="Множество развлечений для захватывающих
+                                                впечатлений" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
-                                            <h4 class="news-card__title">Множество развлечений для захватывающих впечатлений на «24 часах Ле-Мана»</h4>
+                                            <h4 class="news-card__title">Множество развлечений для захватывающих
+                                                впечатлений на «24 часах Ле-Мана»</h4>
                                             <time class="news-card__date" datetime="2026-06-15">29 апреля 2026</time>
                                         </div>
                                         <div class="news-card__bot-inf">
-                                            <p class="news-card__text">Приближаются 94-е «24 часа Ле-Мана», и Автомобильному клубу Запада пора объявить подробности программы Недели гонок. В этом году в программе — международные соревнования, мероприятия для зрителей и выступления известных музыкантов. Ле-Ман снова готов к тому, чтобы «24 часа» длились десять дней.</p>
+                                            <p class="news-card__text">Приближаются 94-е «24 часа Ле-Мана», и
+                                                Автомобильному клубу Запада пора объявить подробности программы Недели
+                                                гонок. В этом году в программе — международные соревнования, мероприятия
+                                                для зрителей и выступления известных музыкантов. Ле-Ман снова готов к
+                                                тому, чтобы «24 часа» длились десять дней.</p>
 
                                         </div>
                                     </div>
@@ -476,15 +516,21 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/6.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/6.jpg" alt="Нико Мюллер набирается опыта в Inter Europol
+                                                Competition (LMP2)" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
-                                            <h4 class="news-card__title">Нико Мюллер набирается опыта в Inter Europol Competition (LMP2)</h4>
+                                            <h4 class="news-card__title">Нико Мюллер набирается опыта в Inter Europol
+                                                Competition (LMP2)</h4>
                                             <time class="news-card__date" datetime="2026-06-15">24 апреля 2026</time>
                                         </div>
                                         <div class="news-card__bot-inf">
-                                            <p class="news-card__text">Добавьте к импульсу опыт, и что у вас получится? Нико Мюллер присоединится к команде Inter Europol Competition LMP2 для участия в 94-й гонке «24 часа Ле-Мана», которая пройдет с 10 по 14 июня 2026 года. Этот гонщик станет новым приобретением для команды, которая уже дважды побеждала в своем классе.</p>
+                                            <p class="news-card__text">Добавьте к импульсу опыт, и что у вас получится?
+                                                Нико Мюллер присоединится к команде Inter Europol Competition LMP2 для
+                                                участия в 94-й гонке «24 часа Ле-Мана», которая пройдет с 10 по 14 июня
+                                                2026 года. Этот гонщик станет новым приобретением для команды, которая
+                                                уже дважды побеждала в своем классе.</p>
 
                                         </div>
                                     </div>
@@ -493,15 +539,21 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/7.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/7.jpg" alt="McLaren MCL-HY — название, намекающее на
+                                                многообещающее участие в «24 часах Ле-Мана»" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
-                                            <h4 class="news-card__title">McLaren MCL-HY — название, намекающее на многообещающее участие в «24 часах Ле-Мана»</h4>
+                                            <h4 class="news-card__title">McLaren MCL-HY — название, намекающее на
+                                                многообещающее участие в «24 часах Ле-Мана»</h4>
                                             <time class="news-card__date" datetime="2026-06-15">1 мая 2026</time>
                                         </div>
                                         <div class="news-card__bot-inf">
-                                            <p class="news-card__text">Некоторые названия навевают воспоминания о былых временах. Другие позволяют заглянуть в будущее. Назвав свой гиперкар MCL-HY, компания McLaren не просто ставит галочку в списке достижений на пути к возвращению. Британский производитель сплетает эмоциональную нить, соединяющую 1995 год с 2027-м... и не только.</p>
+                                            <p class="news-card__text">Некоторые названия навевают воспоминания о былых
+                                                временах. Другие позволяют заглянуть в будущее. Назвав свой гиперкар
+                                                MCL-HY, компания McLaren не просто ставит галочку в списке достижений на
+                                                пути к возвращению. Британский производитель сплетает эмоциональную
+                                                нить, соединяющую 1995 год с 2027-м... и не только.</p>
 
                                         </div>
                                     </div>
@@ -510,15 +562,21 @@
                             <div class="slider__slide">
                                 <article class="news-card">
                                     <div class="news-card__image">
-                                        <img src="../images/news/8.jpg" alt="24 часа Ле-Мана">
+                                        <img src="../images/news/8.jpg" alt="Bosch продлевает партнерство" loading="lazy">
                                     </div>
                                     <div class="news-card__content">
                                         <div class="news-card__top-inf">
-                                            <h4 class="news-card__title">Bosch продлевает партнерство с FIA WEC и «24 часами Ле-Мана» на 2026–2027 годы</h4>
+                                            <h4 class="news-card__title">Bosch продлевает партнерство с FIA WEC и «24
+                                                часами Ле-Мана» на 2026–2027 годы</h4>
                                             <time class="news-card__date" datetime="2026-06-15">15 апреля 2026</time>
                                         </div>
                                         <div class="news-card__bot-inf">
-                                            <p class="news-card__text">Автомобильный клуб «Запад» (Automobile Club de l’Ouest, ACO), чемпионат мира по гонкам на выносливость (FIA WEC) и компания Bosch рады сообщить о продлении партнерства еще на два сезона. В период с 2026 по 2027 год компания Bosch продолжит выступать в качестве премиум-партнера и технического партнера чемпионата мира по гонкам на выносливость и «24 часов Ле-Мана»...</p>
+                                            <p class="news-card__text">Автомобильный клуб «Запад» (Automobile Club de
+                                                l’Ouest, ACO), чемпионат мира по гонкам на выносливость (FIA WEC) и
+                                                компания Bosch рады сообщить о продлении партнерства еще на два сезона.
+                                                В период с 2026 по 2027 год компания Bosch продолжит выступать в
+                                                качестве премиум-партнера и технического партнера чемпионата мира по
+                                                гонкам на выносливость и «24 часов Ле-Мана»...</p>
 
                                         </div>
                                     </div>
@@ -569,8 +627,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-        <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="../js/table-hover.js"></script>
 
     <script src="../js/countdown.js"></script>
@@ -578,6 +636,8 @@
     <script src="../js/slider.js"></script>
     <script src="../js/overlay.js"></script>
     <script src="../js/cursor.js"></script>
+    <script src="../js/scroll.js"></script>
+
 
 
 
@@ -585,4 +645,4 @@
 
 </body>
 
-</html> 
+</html>

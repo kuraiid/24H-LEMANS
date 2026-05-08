@@ -1,10 +1,12 @@
 body {
     cursor: none;
 }
+
 #cursor.hidden,
 #aura.hidden {
     opacity: 0;
 }
+
 #cursor {
     width: 6px;
     height: 6px;
@@ -24,7 +26,7 @@ body {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(255,255,255,.12);
+    border: 1px solid rgba(255, 255, 255, .12);
 
     background: rgba(45, 29, 190, 0.03);
 

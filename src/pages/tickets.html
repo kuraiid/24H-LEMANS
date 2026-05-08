@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ГОНКА WEC 24h LE_mans - официальный сайт гонки, расписание, рейтинги и события">
+    <meta name="keywords" content="WEC, 24h Le Mans, автоспорт, гоночные события">
+    <meta name="author" content="Fairy">
+
+    <title>24H Lemans</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="content">
+    <div id="cursor"></div>
+    <div id="aura"></div>
+    <div class="bg-grid" aria-hidden="true" role="presentation"></div>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header__logo">farry.</a>
+            <nav class="header__nav">
+                <button id="menu-button" aria-controls="fullscreenInfo">МЕНЮ +</button>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay" id="fullscreenInfo">
+        <div class="overlay__wrapper">
+            <div class="overlay__left">
+                <nav class="overlay__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="overlay__nav-link">Главная</a>
+                    <a href="history.html" class="overlay__nav-link">История</a>
+                    <a href="teams.html" class="overlay__nav-link">Команды</a>
+                    <a href="track.html" class="overlay__nav-link">Трасса</a>
+                    <a href="tickets.html" class="overlay__nav-link">Билеты</a>
+                </nav>
+
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="../images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            <div class="overlay__center">
+                <button class="overlay__button-close" aria-label="Закрыть">✕</button>
+
+
+                <button class="overlay__button-buy button-buy" aria-label="Купить билет"
+                    onclick="window.location.href='tickets.html'">
+                    <span class="button-buy__outer-circle">
+                        <span class="button-buy__inner-circle">
+                            <span class="button-buy__text">
+                                Купить билет
+                            </span>
+                        </span>
+                    </span>
+                </button>
+                <div class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            ПОКУПКА <br>
+                            БИЛЕТА
+                        </h1>
+                        <div class="hero__info">
+                            <p class="hero__description">
+                                Ощутите атмосферу легендарной гонки WEC и 24 Hours of Le Mans — скорость, выносливость и
+                                борьба до последнего круга.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../images/banner-buy.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
+                        class="hero__image" loading="lazy" width="600" height="400">
+
+                    <div class="hero__stats">
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">332K+</p>
+                            <p class="hero__stats-label">зрителей посетили 24 Hours of Le Mans</p>
+                        </div>
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">113M+</p>
+                            <p class="hero__stats-label">фанатов следят за чемпионатом WEC по всему миру</p>
+                        </div>
+                        <div class="hero__stats-item">
+                            <p class="hero__stats-number">250K+</p>
+                            <p class="hero__stats-label">болельщиков собираются на трассе в день старта гонки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pack">
+            <div class="container">
+                <div class="pack__wrapper">
+                    <div class="pack__content">
+                        <p class="pack__subtitle">три пакета билетов</p>
+                        <div class="pack__choice">
+                            <div class="pack__block">
+                                <div class="pack__cover" style="background-image: url('../images/pack-one.png');">
+                                    <h2 class="pack__name">ВХОД</h2>
+                                </div>
+                                <div class="pack__info">Доступ на территорию легендарной гонки 24 Hours of Le Mans.
+                                    Свободное перемещение по фан-зонам, доступ к экранным зонам трансляции и возможность
+                                    почувствовать атмосферу гонки вблизи трассы.</div>
+                            </div>
+                            <div class="pack__block">
+                                <div class="pack__cover" style="background-image: url('../images/pack-one.png');">
+                                    <h2 class="pack__name">ВХОД + ТРИБУНЫ</h2>
+                                </div>
+                                <div class="pack__info">Доступ на территорию легендарной гонки 24 Hours of Le Mans.
+                                    Свободное перемещение по фан-зонам, доступ к экранным зонам трансляции и возможность
+                                    почувствовать атмосферу гонки вблизи трассы.</div>
+                            </div>
+                            <div class="pack__block">
+                                <div class="pack__cover" style="background-image: url('../images/pack-one.png');">
+                                    <h2 class="pack__name">GREEN ЗОНА</h2>
+                                </div>
+                                <div class="pack__info">Доступ на территорию легендарной гонки 24 Hours of Le Mans.
+                                    Свободное перемещение по фан-зонам, доступ к экранным зонам трансляции и возможность
+                                    почувствовать атмосферу гонки вблизи трассы.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="stands">
+            <div class="container">
+                <div class="stands__wrapper">
+                    <div class="stands__content">
+                        <p class="stands__subtitle">триубны</p>
+                        <div class="stands__choice">
+                            <div class="stands__item">
+                                <div class="stands__stroke">
+                                    <h3 class="stands__name">Трибуна T01 — Tertre Rouge</h3>
+                                    <button class="stands__plus">+</button>
+                                </div>
+
+                                <div class="stands__content-block">
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ГДЕ НАХОДИТСЯ</p>
+                                        <p class="stand__content-description">В начале прямой Мюльсан, после поворота
+                                            Tertre Rouge</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ЧТО ВИДНО</p>
+                                        <p class="stand__content-description">Машины вылетают из последнего сложного
+                                            поворота и «выстреливают» на 6 км прямой</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ОСОБЕННОСТЬ</p>
+                                        <p class="stand__content-description">Одна из самых популярных трибун.
+
+                                            Отсюда отлично видно, как пилоты борются за идеальный выход на прямую</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">КОМУ ПОДХОДИТ</p>
+                                        <p class="stand__content-description">Тем, кто хочет увидеть начало главной
+                                            прямой Ле-Мана</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <img src="../images/stand/1.png" alt="">
+                                        <button>+</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stands__item">
+                                <div class="stands__stroke">
+                                    <h3 class="stands__name">Трибуна T03 — La Chapelle</h3>
+                                    <button class="stands__plus">+</button>
+                                </div>
+
+                                <div class="stands__content-block">
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ГДЕ НАХОДИТСЯ</p>
+                                        <p class="stand__content-description">В начале прямой Мюльсан, после поворота
+                                            Tertre Rouge</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ЧТО ВИДНО</p>
+                                        <p class="stand__content-description">Машины вылетают из последнего сложного
+                                            поворота и «выстреливают» на 6 км прямой</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ОСОБЕННОСТЬ</p>
+                                        <p class="stand__content-description">Одна из самых популярных трибун.
+
+                                            Отсюда отлично видно, как пилоты борются за идеальный выход на прямую</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">КОМУ ПОДХОДИТ</p>
+                                        <p class="stand__content-description">Тем, кто хочет увидеть начало главной
+                                            прямой Ле-Мана</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <img src="../images/stand/1.png" alt="">
+                                        <button>+</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stands__item">
+                                <div class="stands__stroke">
+                                    <h3 class="stands__name">Трибуна T23 — Raccordement Motul</h3>
+                                    <button class="stands__plus">+</button>
+                                </div>
+
+                                <div class="stands__content-block">
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ГДЕ НАХОДИТСЯ</p>
+                                        <p class="stand__content-description">В начале прямой Мюльсан, после поворота
+                                            Tertre Rouge</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ЧТО ВИДНО</p>
+                                        <p class="stand__content-description">Машины вылетают из последнего сложного
+                                            поворота и «выстреливают» на 6 км прямой</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ОСОБЕННОСТЬ</p>
+                                        <p class="stand__content-description">Одна из самых популярных трибун.
+
+                                            Отсюда отлично видно, как пилоты борются за идеальный выход на прямую</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">КОМУ ПОДХОДИТ</p>
+                                        <p class="stand__content-description">Тем, кто хочет увидеть начало главной
+                                            прямой Ле-Мана</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <img src="../images/stand/1.png" alt="">
+                                        <button>+</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stands__item">
+                                <div class="stands__stroke">
+                                    <h3 class="stands__name">Трибуна T52 — Main Stand (Главная трибуна)</h3>
+                                    <button class="stands__plus">+</button>
+                                </div>
+
+                                <div class="stands__content-block">
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ГДЕ НАХОДИТСЯ</p>
+                                        <p class="stand__content-description">В начале прямой Мюльсан, после поворота
+                                            Tertre Rouge</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ЧТО ВИДНО</p>
+                                        <p class="stand__content-description">Машины вылетают из последнего сложного
+                                            поворота и «выстреливают» на 6 км прямой</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ОСОБЕННОСТЬ</p>
+                                        <p class="stand__content-description">Одна из самых популярных трибун.
+
+                                            Отсюда отлично видно, как пилоты борются за идеальный выход на прямую</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">КОМУ ПОДХОДИТ</p>
+                                        <p class="stand__content-description">Тем, кто хочет увидеть начало главной
+                                            прямой Ле-Мана</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <img src="../images/stand/1.png" alt="">
+                                        <button>+</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stands__item">
+                                <div class="stands__stroke">
+                                    <h3 class="stands__name">Новые трибуны 2026 года — Maison Blanche и Karting</h3>
+                                    <button class="stands__plus">+</button>
+                                </div>
+
+                                <div class="stands__content-block">
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ГДЕ НАХОДИТСЯ</p>
+                                        <p class="stand__content-description">В начале прямой Мюльсан, после поворота
+                                            Tertre Rouge</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ЧТО ВИДНО</p>
+                                        <p class="stand__content-description">Машины вылетают из последнего сложного
+                                            поворота и «выстреливают» на 6 км прямой</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">ОСОБЕННОСТЬ</p>
+                                        <p class="stand__content-description">Одна из самых популярных трибун.
+
+                                            Отсюда отлично видно, как пилоты борются за идеальный выход на прямую</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <p class="stand__content-title">КОМУ ПОДХОДИТ</p>
+                                        <p class="stand__content-description">Тем, кто хочет увидеть начало главной
+                                            прямой Ле-Мана</p>
+
+                                    </div>
+                                    <div class="stand__content-item">
+                                        <img src="../images/stand/1.png" alt="">
+                                        <button>+</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pay">
+            <div class="container">
+                <div class="pay__wrapper">
+                    <div class="pay__content">
+                        <div class="pay__left">
+                            <h2 class="pay__title">Забронировать билет</h2>
+                            <p class="pay__about">Оставьте заявку, и мы свяжемся с вами для уточнения деталей: выбор
+                                трибуны, количество билетов, способ получения.</p>
+                        </div>
+                        <div class="pay__right">
+                            <form class="pay__form">
+
+                                <div class="pay__field">
+                                    <label class="pay__label">ФИО</label>
+                                    <input type="text" class="pay__input" required placeholder="[ Введите ФИО ]">
+                                </div>
+
+                                <div class="pay__field">
+                                    <label class="pay__label">Email</label>
+                                    <input type="email" class="pay__input" required  placeholder="[ Введите Email ]">
+                                </div>
+
+                                <div class="pay__field">
+                                    <label class="pay__label">Телефон</label>
+                                    <input type="tel" class="pay__input" required  placeholder="[ Введите номер телефона ]">
+                                </div>
+
+                                <div class="pay__field">
+                                    <label class="pay__label">Пакет билета</label>
+                                    <select class="pay__select" required>
+                                        <option value="" selected disabled >Выберите пакет</option>
+                                        <option value="entry">Вход</option>
+                                        <option value="stand">Вход + трибуна</option>
+                                        <option value="green">Green зона</option>
+                                    </select>
+                                </div>
+
+                                <div class="pay__field">
+                                    <label class="pay__label">Трибуны</label>
+                                    <select class="pay__select" required>
+                                        <option value="" selected disabled>Выберите трибуну</option>
+                                        <option value="entry">Вход</option>
+                                        <option value="stand">Вход + трибуна</option>
+                                        <option value="green">Green зона</option>
+                                    </select>
+                                </div>
+
+                                <button class="pay__submit" type="submit" aria-label="Отправить заявку">
+                                    →
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Facebook.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Myspace Circled.svg"
+                                    alt="Facebook" class="footer__icon"></a></li>
+                        <li class="footer__social-item"><a class="footer__social-link" href="#"
+                                rel="noopener noreferrer"><img src="../images/icons/light/Pinterest.svg" alt="Facebook"
+                                    class="footer__icon"></a></li>
+                    </ul>
+
+                    <div class="footer__social-info">
+                        <p class="footer__phone"><a href="tel:+79000000000" class="footer__link"
+                                rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                        <p class="footer__email"><a href="mailto:info@lm24wheel.ru" class="footer__link"
+                                rel="noopener noreferrer">info@lm24.ru</a></p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a class="footer__logo" href="index.html">farry.</a>
+
+                    <a class="footer__link footer__link--left" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--center" href="#">Политика конфиденциальности</a>
+                    <a class="footer__link footer__link--right" href="#">Настройки конфиденциальности</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+        integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/table-hover.js"></script>
+
+    <script src="../js/countdown.js"></script>
+    <script src="../js/calendar.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/overlay.js"></script>
+    <script src="../js/cursor.js"></script>
+    <script src="../js/stand.js"></script>
+    <script src="../js/scroll.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>

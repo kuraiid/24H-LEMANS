@@ -67,7 +67,10 @@
     justify-content: space-around;
     z-index: 10;
     pointer-events: none;
-  }
+  } 
+  .overlay__button-buy {
+    pointer-events: auto; 
+}
 
   &__button-close {
     @include flex();
@@ -82,7 +85,7 @@
       transform: rotate(45deg);
     }
   }
-  
+    
   &__nav {
     display: flex;
     flex-direction: column;

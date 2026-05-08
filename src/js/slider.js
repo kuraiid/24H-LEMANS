@@ -1,118 +1,76 @@
-
-// slider.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.slider');
+    if (!slider) return;
+
     const track = slider.querySelector('.slider__track');
-    const slides = Array.from(track.querySelectorAll('.slider__slide'));
-    const prevButton = slider.querySelector('.slider__arrow--prev');
-    const nextButton = slider.querySelector('.slider__arrow--next');
-    const progressFill = slider.querySelector('.slider__progress-fill');
-    
-    let currentIndex = 0;
-    let slidesPerView = getSlidesPerView();
-    let totalSlides = slides.length;
-    
-    // Определяем количество видимых слайдов в зависимости от ширины экрана
+    const slides = slider.querySelectorAll('.slider__slide');
+    const prev = slider.querySelector('.slider__arrow--prev');
+    const next = slider.querySelector('.slider__arrow--next');
+    const progress = slider.querySelector('.slider__progress-fill');
+
+    let index = 0;
+
     function getSlidesPerView() {
         if (window.innerWidth <= 768) return 1;
         if (window.innerWidth <= 1024) return 2;
         return 3;
     }
-    
-    // Вычисляем максимальный индекс
+
     function getMaxIndex() {
-        return totalSlides - slidesPerView;
+        return slides.length - getSlidesPerView();
     }
-    
-    // Обновляем позицию слайдера
-    function updateSlider() {
-        const slideWidth = slides[0].offsetWidth;
-        const gap = 20; // 2rem = 32px (подгони под свой gap)
-        const offset = currentIndex * (slideWidth + gap);
-        
-        track.style.transform = `translateX(-${offset}px)`;
-        
-        // Обновляем прогресс-бар
-        const maxIndex = getMaxIndex();
-        const progress = (currentIndex / maxIndex) * 100;
-        progressFill.style.width = `${progress}%`;
-        
-        // Обновляем состояние кнопок
-        updateButtons();
+
+    function update() {
+        const slideWidth = slides[0].offsetWidth + 20; // gap
+
+        track.style.transform = `translateX(-${index * slideWidth}px)`;
+
+        const max = getMaxIndex();
+        const progressPercent = max === 0 ? 100 : (index / max) * 100;
+
+        progress.style.width = `${progressPercent}%`;
+
+        prev.disabled = index === 0;
+        next.disabled = index >= max;
     }
-    
-    // Включаем/выключаем кнопки
-    function updateButtons() {
-        const maxIndex = getMaxIndex();
-        
-        prevButton.disabled = currentIndex === 0;
-        nextButton.disabled = currentIndex >= maxIndex;
-    }
-    
-    // Листаем вперёд
-    function goToNext() {
-        const maxIndex = getMaxIndex();
-        if (currentIndex < maxIndex) {
-            currentIndex++;
-            updateSlider();
+
+    function nextSlide() {
+        const max = getMaxIndex();
+        if (index < max) {
+            index++;
+            update();
         }
     }
-    
-    // Листаем назад
-    function goToPrev() {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateSlider();
+
+    function prevSlide() {
+        if (index > 0) {
+            index--;
+            update();
         }
     }
-    
-    // Обработчики нажатий
-    nextButton.addEventListener('click', goToNext);
-    prevButton.addEventListener('click', goToPrev);
-    
-    // Свайпы для мобильных
-    let touchStartX = 0;
-    let touchEndX = 0;
-    
+
+    next.addEventListener('click', nextSlide);
+    prev.addEventListener('click', prevSlide);
+    let startX = 0;
+
     track.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
+        startX = e.touches[0].clientX;
     }, { passive: true });
-    
+
     track.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-    
-    function handleSwipe() {
-        const swipeThreshold = 50;
-        const diff = touchStartX - touchEndX;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                goToNext(); // Свайп влево
-            } else {
-                goToPrev(); // Свайп вправо
-            }
+        const diff = startX - e.changedTouches[0].clientX;
+
+        if (Math.abs(diff) > 50) {
+            diff > 0 ? nextSlide() : prevSlide();
         }
-    }
-    
-    // Обновление при ресайзе
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            slidesPerView = getSlidesPerView();
-            
-            // Сбрасываем индекс, если вышли за границы
-            const maxIndex = getMaxIndex();
-            if (currentIndex > maxIndex) {
-                currentIndex = maxIndex;
-            }
-            
-            updateSlider();
-        }, 250);
     });
-    
-    // Инициализация
-    updateSlider();
+
+
+    window.addEventListener('resize', () => {
+        const max = getMaxIndex();
+        if (index > max) index = max;
+        update();
+    });
+
+    update();
 });

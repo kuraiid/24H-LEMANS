@@ -9,9 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let auraX = mouseX;
     let auraY = mouseY;
 
-    // =========================
-    // Mouse move
-    // =========================
 
     document.addEventListener('mousemove', (e) => {
 
@@ -23,21 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
-    // =========================
-    // Smooth animation
-    // =========================
-
     function animate() {
 
-        // плавное отставание aura
         auraX += (mouseX - auraX) * 0.12;
         auraY += (mouseY - auraY) * 0.12;
 
-        // маленькая точка
+
         cursor.style.transform =
             `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 
-        // aura
+
         aura.style.transform =
             `translate3d(${auraX - 20}px, ${auraY - 20}px, 0)`;
 
@@ -45,10 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     animate();
-
-    // =========================
-    // Hide on leave
-    // =========================
 
     document.addEventListener('mouseleave', () => {
         cursor.classList.add('hidden');
@@ -83,3 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+

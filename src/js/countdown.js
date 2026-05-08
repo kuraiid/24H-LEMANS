@@ -1,65 +1,48 @@
-
 class CountdownTimer {
     constructor() {
         this.targetDate = new Date(Date.UTC(2026, 5, 10, 12, 0, 0)).getTime();
-        
-        this.daysElement = document.getElementById('days');
-        this.hoursElement = document.getElementById('hours');
-        this.minutesElement = document.getElementById('minutes');
-        
-        this.intervalId = null;
-        this.isRunning = false;
-        
-        this.init();
-    }
-    
-    init() {
-        if (!this.daysElement || !this.hoursElement || !this.minutesElement) {
-            console.error('Countdown elements not found!');
-            return;
-        }
-        
-        console.log('✅ Countdown initialized');
+
+        this.days = document.getElementById('days');
+        this.hours = document.getElementById('hours');
+        this.minutes = document.getElementById('minutes');
+
+        if (!this.days || !this.hours || !this.minutes) return;
+
         this.start();
     }
-    
+
     start() {
-        if (this.isRunning) return;
-        
-        this.isRunning = true;
-        this.updateTimer();
-        
-        this.intervalId = setInterval(() => {
-            this.updateTimer();
-        }, 60000); // 60000 мс = 1 минута
+        this.update();
+
+        this.interval = setInterval(() => {
+            this.update();
+        }, 1000); // лучше 1 секунда
     }
-    
-    updateTimer() {
+
+    update() {
         const now = Date.now();
-        const distance = this.targetDate - now;
-        
-        if (distance <= 0) {
-            this.daysElement.textContent = '00';
-            this.hoursElement.textContent = '00';
-            this.minutesElement.textContent = '00';
-            
-            clearInterval(this.intervalId);
-            this.isRunning = false;
+        const diff = this.targetDate - now;
+
+        if (diff <= 0) {
+            this.set(0, 0, 0);
+            clearInterval(this.interval);
             return;
         }
-        
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        
-        this.daysElement.textContent = String(days).padStart(2, '0');
-        this.hoursElement.textContent = String(hours).padStart(2, '0');
-        this.minutesElement.textContent = String(minutes).padStart(2, '0');
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+        this.set(days, hours, minutes);
+    }
+
+    set(d, h, m) {
+        this.days.textContent = String(d).padStart(2, '0');
+        this.hours.textContent = String(h).padStart(2, '0');
+        this.minutes.textContent = String(m).padStart(2, '0');
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(() => {
-        const countdown = new CountdownTimer();
-    }, 100);
+    new CountdownTimer();
 });

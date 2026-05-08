@@ -1,0 +1,21 @@
+
+label {font-weight: 200;}
+input, select{
+    background-color: transparent;
+    border: none;
+
+    padding: 2rem 2rem 2rem 0;
+    border-bottom: 1px solid $color-accent;
+    outline: none;
+        transition: border-color 0.3s ease;
+    
+}
+select {
+        padding: 1rem 0;
+        color: #000000;
+}
+
+input:focus,
+ select:focus {
+        border-bottom: 2px solid $color-active;
+    }

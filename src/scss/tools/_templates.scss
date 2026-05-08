@@ -25,6 +25,12 @@
     background-color: $color-bg-light;
 }
 
+%style-button-full-dark {
+    border: none;
+    background-color: $color-bg-dark;
+    color: $color-text-second;
+}
+
 %style-button-buy {
     .button-buy {
     @include flex(center);

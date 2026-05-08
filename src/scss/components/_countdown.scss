@@ -1,9 +1,12 @@
 .countdown {
   margin-top: 32rem;
 
+  &__subtitle {
+    text-align: center;
+  }
+
   &__timer {
     @include flex();
-
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -16,18 +19,18 @@
   }
 
   &__number {
-    transition: all 0.3s ease;
     @extend %style-number-accent;
+    transition: transform 0.25s ease;
   }
 
-  &__number--changing {
-    animation: pulse 0.3s ease;
+
+  &__number.updated {
+    transform: scale(1.08);
   }
 
   &__separator {
     margin-top: -2rem;
     @extend %style-number-accent;
-
     animation: blink 1s infinite;
   }
 }

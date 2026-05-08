@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const items = document.querySelectorAll('.calendar__event');
+    const items = document.querySelectorAll('.stands__item');
 
     items.forEach(item => {
-        const stroke = item.querySelector('.calendar__stroke');
+        const stroke = item.querySelector('.stands__stroke');
 
         stroke.addEventListener('click', () => {
 
-            // закрываем остальные
+        
             items.forEach(other => {
                 if (other !== item) {
                     other.classList.remove('active');
                 }
             });
 
-            // toggle текущего
             item.classList.toggle('active');
         });
     });

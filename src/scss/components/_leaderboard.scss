@@ -47,12 +47,13 @@
   &__row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    transition: all 0.2s ease;
+    transition: transform 0.25s ease, background 0.25s ease;
+    will-change: transform;
   }
 
-  &__row--hover {
+  &__row:hover {
+    transform: scale(1.02) translateY(-2px);
     background: $color-bg-dark;
-    transform: scale(1.02);
     color: $color-text-second;
     cursor: none;
     padding-inline: 10px;
