@@ -15,8 +15,6 @@
 
   @extend %style-button-buy;
 
-
-
   &--active {
     transform: translateX(0);
     visibility: visible;
@@ -37,11 +35,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto
   }
-  &__logo {
-  @extend %style-logo;
 
+  &__logo {
+    @extend %style-logo;
   }
+
   &__right {
     flex: 0 0 50%;
   }
@@ -50,12 +50,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  @media (max-width: 768px) {
-    &__right {
-      display: none;
-    }
   }
 
   &__center {
@@ -67,10 +61,11 @@
     justify-content: space-around;
     z-index: 10;
     pointer-events: none;
-  } 
-  .overlay__button-buy {
-    pointer-events: auto; 
-}
+  }
+
+  &__button-buy {
+    pointer-events: auto;
+  }
 
   &__button-close {
     @include flex();
@@ -85,7 +80,7 @@
       transform: rotate(45deg);
     }
   }
-    
+
   &__nav {
     display: flex;
     flex-direction: column;
@@ -98,7 +93,6 @@
 
   &__contact {
     @include flex(space-between);
-
   }
 
   &__contact-list {
@@ -131,35 +125,114 @@
   &__link--center {
     text-align: center;
   }
-
+   
   &__link:hover {
     opacity: 0.7;
   }
 
   &__politics {
     @include flex(space-between);
-
     gap: 3rem;
     margin-top: 5rem;
   }
-  
-}
 
-@keyframes slowSlideIn {
-    0% {
-      transform: translateX(100%);
-      visibility: hidden;
+  @media (max-width: 1400px) {
+    &__right {
+      display: none;
+    }
+
+    &__left {
+      flex: 1; 
+      padding: 4rem;
+    }
+
+    &__center {
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 3rem 4rem;
       pointer-events: none;
     }
 
-    1% {
-      visibility: visible;
+    &__button-close {
       pointer-events: auto;
+      position: relative;
+      z-index: 20;
     }
 
-    100% {
-      transform: translateX(0);
-      visibility: visible;
+    &__button-buy {
       pointer-events: auto;
+      position: relative;
+      z-index: 20;
+    margin-right: 6rem;
+
     }
   }
+
+  @media (max-width: 768px) {
+    &__space {
+      display: none;
+      
+    }
+    &__wrapper {
+      flex-direction: column;
+      position: relative;
+    }
+    &__left {
+      padding: 2rem;
+    }
+     &__center {
+      position: static;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem 7rem 2rem;
+      pointer-events: auto;
+  }
+
+    &__nav {
+      gap: 1.5rem;
+    }
+
+    &__politics {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    &__contact {
+      gap: 1.5rem;
+    }
+
+    &__social-info {
+      text-align: left;
+    }
+
+    
+
+    &__button-close {
+      width: 5rem;
+      height: 5rem;
+      font-size: $font-size-l;
+    }
+  }
+}
+
+@keyframes slowSlideIn {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  1% {
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+}

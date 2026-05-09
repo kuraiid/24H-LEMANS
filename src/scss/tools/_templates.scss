@@ -35,10 +35,11 @@
     .button-buy {
     @include flex(center);
     @extend %style-button-tr;
+    
 
     &__outer-circle {
-        width: 32rem;
-        height: 32rem;
+         width: clamp(21rem, 20vw, 32rem);   // от 16rem до 32rem
+    height: clamp(21rem, 20vw, 32rem);
         flex-shrink: 0;
         border: 1px solid white;
         border-radius: 50%;
@@ -47,8 +48,8 @@
     }
 
     &__inner-circle {
-        width: 25.6rem;
-        height: 25.6rem;
+        width: clamp(17rem, 16vw, 25.6rem); // от 12.8rem до 25.6rem
+        height: clamp(17rem, 16vw, 25.6rem);
         flex-shrink: 0;
         border: 1px solid white;
         border-radius: 50%;

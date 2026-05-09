@@ -385,8 +385,8 @@ blockquote {
   align-items: center;
 }
 .overlay .button-buy__outer-circle {
-  width: 32rem;
-  height: 32rem;
+  width: clamp(21rem, 20vw, 32rem);
+  height: clamp(21rem, 20vw, 32rem);
   flex-shrink: 0;
   border: 1px solid white;
   border-radius: 50%;
@@ -395,8 +395,8 @@ blockquote {
   align-items: center;
 }
 .overlay .button-buy__inner-circle {
-  width: 25.6rem;
-  height: 25.6rem;
+  width: clamp(17rem, 16vw, 25.6rem);
+  height: clamp(17rem, 16vw, 25.6rem);
   flex-shrink: 0;
   border: 1px solid white;
   border-radius: 50%;
@@ -512,6 +512,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 .overlay__right {
   flex: 0 0 50%;
@@ -520,11 +521,6 @@ blockquote {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-@media (max-width: 768px) {
-  .overlay__right {
-    display: none;
-  }
 }
 .overlay__center {
   position: absolute;
@@ -536,7 +532,7 @@ blockquote {
   z-index: 10;
   pointer-events: none;
 }
-.overlay .overlay__button-buy {
+.overlay__button-buy {
   pointer-events: auto;
 }
 .overlay__button-close {
@@ -596,6 +592,72 @@ blockquote {
   align-items: center;
   gap: 3rem;
   margin-top: 5rem;
+}
+@media (max-width: 1400px) {
+  .overlay__right {
+    display: none;
+  }
+  .overlay__left {
+    flex: 1;
+    padding: 4rem;
+  }
+  .overlay__center {
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 3rem 4rem;
+    pointer-events: none;
+  }
+  .overlay__button-close {
+    pointer-events: auto;
+    position: relative;
+    z-index: 20;
+  }
+  .overlay__button-buy {
+    pointer-events: auto;
+    position: relative;
+    z-index: 20;
+    margin-right: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .overlay__space {
+    display: none;
+  }
+  .overlay__wrapper {
+    flex-direction: column;
+    position: relative;
+  }
+  .overlay__left {
+    padding: 2rem;
+  }
+  .overlay__center {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 7rem 2rem;
+    pointer-events: auto;
+  }
+  .overlay__nav {
+    gap: 1.5rem;
+  }
+  .overlay__politics {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .overlay__contact {
+    gap: 1.5rem;
+  }
+  .overlay__social-info {
+    text-align: left;
+  }
+  .overlay__button-close {
+    width: 5rem;
+    height: 5rem;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+  }
 }
 
 @keyframes slowSlideIn {
