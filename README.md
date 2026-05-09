@@ -22,7 +22,7 @@ code -> скачать zip
 
 git clone https://github.com/kuraiid/24H-LEMANS.git
 cd lm24-wheel
-
+```
 ## Структура проекта
 ```
 ├── src/
