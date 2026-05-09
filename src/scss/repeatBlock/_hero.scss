@@ -44,4 +44,49 @@
   &__stats-label {
     max-width: 15ch;
   }
+
+
+  @media (max-width: 976px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__info {
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: end; 
+      padding-top: 3rem;
+    }
+
+    &__social-list {
+      justify-content:flex-end; 
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 2rem;
+    }
+
+    &__social-list {
+      justify-content: flex-start;
+      padding-top: 2rem;
+    }
+
+    &__stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
 }

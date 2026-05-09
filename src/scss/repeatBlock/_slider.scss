@@ -63,20 +63,23 @@
   }
 
   &__slide {
-    flex: 0 0 calc((100% - 4rem) / 3);
+    flex: 0 0 calc((100% - 4rem) / 3); 
+
+    // ★ Планшеты — 2 слайда ★
+    @media (max-width: 1400px) {
+      flex: 0 0 calc((100% - 2rem) / 2); 
+    }
+
+    // ★ Телефоны — 1 слайд ★
+    @media (max-width: 960px) {
+      flex: 0 0 100%; 
+    }
   }
-}
-@media (max-width: 1024px) {
-  .slider__slide {
-    width: calc((100% - 2rem) / 2);
-  }
+
+
+
 }
 
-@media (max-width: 768px) {
-  .slider__slide {
-    width: 100%;
-  }
-}
 
 
 .slider__progress-bar {

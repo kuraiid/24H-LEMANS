@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let index = 0;
 
     function getSlidesPerView() {
-        if (window.innerWidth <= 768) return 1;
-        if (window.innerWidth <= 1024) return 2;
+        if (window.innerWidth <= 960) return 1;
+        if (window.innerWidth <= 1400) return 2;
         return 3;
     }
 
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function update() {
-        const slideWidth = slides[0].offsetWidth + 20; // gap
+        const slideWidth = slides[0].offsetWidth + 20;
 
         track.style.transform = `translateX(-${index * slideWidth}px)`;
 

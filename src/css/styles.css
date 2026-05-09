@@ -194,13 +194,6 @@ svg * {
 /* Шрифт для заголовков */
 /* Шрифт для основного текста */
 /* Шрифт для акцентного текста */
-/*18px*/
-/*20px*/
-/*24px*/
-/* 40px */
-/* 48px */
-/*64px*/
-/*96px*/
 body {
   cursor: none;
 }
@@ -276,7 +269,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
   line-height: 1;
   color: #10204A;
   background: #f5f7fa;
@@ -287,21 +280,21 @@ h1 {
   font-family: "Tektur", sans-serif;
   font-weight: 400;
   line-height: 1;
-  font-size: 9.6rem;
+  font-size: clamp(4.8rem, 10vw, 9.6rem);
 }
 
 h2 {
   font-family: "Tektur", sans-serif;
   font-weight: 400;
   line-height: 0.75;
-  font-size: 6.4rem;
+  font-size: clamp(3.6rem, 7vw, 6.4rem);
 }
 
 h3 {
   font-family: "Tektur", sans-serif;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 4rem;
+  line-height: clamp(2.8rem, 5vw, 4rem);
 }
 
 h4,
@@ -309,7 +302,7 @@ h5,
 h6 {
   font-family: "Tektur", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
 p {
@@ -332,7 +325,7 @@ label {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
   margin-bottom: 0.4rem;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
   color: #10204A;
   font-weight: 400;
 }
@@ -341,7 +334,7 @@ input,
 textarea,
 select {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
 }
 
 ul,
@@ -358,16 +351,16 @@ blockquote {
   font-family: "Tektur", sans-serif;
   font-weight: 400;
   line-height: 1;
-  font-size: 9.6rem;
+  font-size: clamp(4.8rem, 10vw, 9.6rem);
 }
 
 .footer__logo, .overlay__logo, .header__logo {
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
 }
 
 .calendar__date, .stats__number, .countdown__separator, .countdown__number {
   font-family: "Orbitron", sans-serif;
-  font-size: 9.6rem;
+  font-size: clamp(4.8rem, 10vw, 9.6rem);
 }
 
 .leaderboard__arrow, .overlay .button-buy {
@@ -550,7 +543,7 @@ blockquote {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
   width: 8rem;
   height: 8rem;
   transition: transform 0.3s ease;
@@ -663,10 +656,46 @@ blockquote {
 }
 .hero__stats-number {
   font-family: "Tektur", sans-serif;
-  font-size: 4.8rem;
+  font-size: clamp(3.2rem, 6vw, 4.8rem);
 }
 .hero__stats-label {
   max-width: 15ch;
+}
+@media (max-width: 976px) {
+  .hero__content {
+    flex-direction: column;
+  }
+  .hero__info {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: end;
+    padding-top: 3rem;
+  }
+  .hero__social-list {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 480px) {
+  .hero__content {
+    flex-direction: column;
+  }
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+  }
+  .hero__social-list {
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
+  .hero__stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 
 .slider {
@@ -729,17 +758,17 @@ blockquote {
 .slider__slide {
   flex: 0 0 calc((100% - 4rem) / 3);
 }
+@media (max-width: 1400px) {
+  .slider__slide {
+    flex: 0 0 calc((100% - 2rem) / 2);
+  }
+}
+@media (max-width: 960px) {
+  .slider__slide {
+    flex: 0 0 100%;
+  }
+}
 
-@media (max-width: 1024px) {
-  .slider__slide {
-    width: calc((100% - 2rem) / 2);
-  }
-}
-@media (max-width: 768px) {
-  .slider__slide {
-    width: 100%;
-  }
-}
 .footer {
   background-color: #10204A;
   color: #F0F0F0;
@@ -851,7 +880,7 @@ select:focus {
   margin-top: 5rem;
 }
 .leaderboard__arrow {
-  font-size: 2.4rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 500;
   transition: all 0.6s ease;
 }
@@ -1056,21 +1085,47 @@ select:focus {
   max-width: 65rem;
   margin-top: 8rem;
 }
-
 .about__content {
   margin-top: 25rem;
   display: grid;
   grid-template-columns: 10% 90%;
+  align-items: start;
 }
-
 .about__subtitle {
   color: rgba(17, 34, 80, 0.62);
   text-transform: uppercase;
 }
-
 .about__description {
-  flex-wrap: wrap;
   text-align: justify;
+}
+@media (max-width: 1400px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 2rem;
+  }
+  .about__subtitle {
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .about__title {
+    margin-top: 4rem;
+  }
+  .about__content {
+    margin-top: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .about__title {
+    max-width: 100%;
+    margin-top: 3rem;
+  }
+  .about__content {
+    margin-top: 3rem;
+    gap: 1.5rem;
+  }
 }
 
 .stats {
@@ -1110,6 +1165,54 @@ select:focus {
 }
 .stats__label {
   max-width: 10ch;
+}
+@media (max-width: 1400px) {
+  .stats {
+    min-height: auto;
+  }
+  .stats__wrapper {
+    padding-block: 3rem;
+  }
+  .stats__top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .stats__description {
+    max-width: 100%;
+  }
+  .stats__bottom {
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: 1.5rem;
+  }
+  .stats__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+@media (max-width: 976px) {
+  .stats {
+    min-height: auto;
+  }
+  .stats__wrapper {
+    padding-block: 3rem;
+  }
+  .stats__top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .stats__description {
+    max-width: 100%;
+  }
+  .stats__bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .stats__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .calendar {
@@ -1163,11 +1266,39 @@ select:focus {
 }
 .calendar__link {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
   margin-top: 1rem;
 }
 .calendar__link:hover {
   text-decoration: underline;
+}
+@media (max-width: 960px) {
+  .calendar {
+    margin-top: 16rem;
+  }
+  .calendar__content {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  .calendar__content-left {
+    flex: 1;
+    text-align: left;
+  }
+  .calendar__content-right {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .calendar {
+    margin-top: 10rem;
+  }
+  .calendar__events {
+    gap: 2rem;
+  }
+  .calendar__stroke {
+    flex-wrap: wrap;
+  }
 }
 
 .calendar__event.active .calendar__content {
@@ -1627,11 +1758,11 @@ select:focus {
 }
 .card__name, .card__number {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
   max-width: 180px;
 }
 .card__link {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 1.5vw, 1.4rem);
 }
 .card:hover {
   cursor: pointer;
@@ -1793,7 +1924,7 @@ select:focus {
 }
 .detailed__number {
   font-family: "Orbitron", sans-serif;
-  font-size: 6.4rem;
+  font-size: clamp(3.6rem, 7vw, 6.4rem);
   position: relative;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
@@ -1937,7 +2068,7 @@ footer {
   padding-top: 2rem;
 }
 .pay__submit {
-  font-size: 4rem;
+  font-size: clamp(2.8rem, 5vw, 4rem);
   width: 15rem;
   height: 15rem;
   transform: rotate(-45deg);
@@ -1946,7 +2077,7 @@ footer {
 }
 
 .pay__submit {
-  font-size: 4rem;
+  font-size: clamp(2.8rem, 5vw, 4rem);
   width: 15rem;
   height: 15rem;
   transform: rotate(-45deg);
