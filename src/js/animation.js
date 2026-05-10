@@ -1,3 +1,5 @@
+// Этот файл я сгенерирвоал в  нейросети, что бы можно было чуть удобнее анимации разные добавить 
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const observer = new IntersectionObserver((entries) => {
@@ -30,35 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(el);
     }
   });
-  const parallaxElements = document.querySelectorAll('[data-parallax]');
   
-  if (parallaxElements.length > 0) {
-    
-    function updateParallax() {
-      const scrolled = window.pageYOffset;
-      
-      parallaxElements.forEach(el => {
-        const speed = parseFloat(el.dataset.parallax) || 0.3; // скорость: 0 = неподвижно, 1 = как скролл
-        const rect = el.getBoundingClientRect();
-        const elementTop = rect.top + scrolled;
-        const elementHeight = rect.height;
-        const windowHeight = window.innerHeight;
-        
-        // Элемент в зоне видимости?
-        if (rect.top < windowHeight && rect.bottom > 0) {
-          const offset = (scrolled - elementTop + windowHeight) * speed;
-          el.style.transform = `translateY(-${offset}px)`;
-        }
-      });
-      
-      requestAnimationFrame(() => {}); // плавность
-    }
-    
-    window.addEventListener('scroll', updateParallax, { passive: true });
-    window.addEventListener('resize', updateParallax, { passive: true });
-    
-    updateParallax(); // первый запуск
-  }
 
 });
 
