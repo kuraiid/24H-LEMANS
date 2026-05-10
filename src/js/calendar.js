@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         stroke.addEventListener('click', () => {
 
-            // закрываем остальные
+   
             items.forEach(other => {
                 if (other !== item) {
                     other.classList.remove('active');
                 }
             });
 
-            // toggle текущего
+ 
             item.classList.toggle('active');
         });
     });

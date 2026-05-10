@@ -9,16 +9,42 @@
 .bg-grid::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 120px;
-  width: 1px;
-  height: 100vh;
-  background: rgba(16, 32, 74, 0.12);
+  inset: 0;
   
-  box-shadow: 240px 0 0 rgba(16, 32, 74, 0.12), 480px 0 0 rgba(16, 32, 74, 0.12), 720px 0 0 rgba(16, 32, 74, 0.12), 960px 0 0 rgba(16, 32, 74, 0.12), 1200px 0 0 rgba(16, 32, 74, 0.12), 1440px 0 0 rgba(16, 32, 74, 0.12), 1680px 0 0 rgba(16, 32, 74, 0.12);
-  will-change: box-shadow;
+  /* Вертикальные линии под наклоном вправо + горизонтальные прямые */
+  background-image:
+    /* Вертикальные — наклон вправо */
+    repeating-linear-gradient(
+      97deg,
+      transparent,
+      transparent 79px,
+      rgba(16, 32, 74, 0.045) 79px,
+      rgba(16, 32, 74, 0.045) 80px
+    ),
+    /* Горизонтальные — прямые */
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 79px,
+      rgba(16, 32, 74, 0.045) 79px,
+      rgba(16, 32, 74, 0.045) 80px
+    );
   
+  /* Выпуклый эффект */
+  mask-image: radial-gradient(
+    ellipse 140% 90% at 50% 50%,
+    black 30%,
+    transparent 70%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 140% 90% at 50% 50%,
+    black 30%,
+    transparent 70%
+  );
+  
+  will-change: mask-image;
 }
+
 
 
 @media (max-width: 900px) {

@@ -10,7 +10,7 @@
   visibility: hidden;
   pointer-events: none;
   color: $color-text-second;
-  transition: transform 2.8s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s linear 2s;
+  transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s linear 2s;
   will-change: transform;
 
   @extend %style-button-buy;
@@ -19,7 +19,7 @@
     transform: translateX(0);
     visibility: visible;
     pointer-events: all;
-    transition: transform 2.8s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s;
+    transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1), visibility 0s;
   }
 
   &__wrapper {

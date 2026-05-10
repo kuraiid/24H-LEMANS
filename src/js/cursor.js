@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animate() {
 
-        auraX += (mouseX - auraX) * 0.12;
-        auraY += (mouseY - auraY) * 0.12;
+        auraX += (mouseX - auraX) * 0.8;
+        auraY += (mouseY - auraY) * 0.8;
 
 
         cursor.style.transform =

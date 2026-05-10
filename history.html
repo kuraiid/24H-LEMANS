@@ -31,48 +31,13 @@
         <div class="overlay__wrapper">
             <div class="overlay__left">
                 <nav class="overlay__nav" aria-label="Основная навигация">
-                    <a href="index.html" class="overlay__nav-link">Главная</a>
-                    <a href="history.html" class="overlay__nav-link">История</a>
-                    <a href="teams.html" class="overlay__nav-link">Команды</a>
-                    <a href="track.html" class="overlay__nav-link">Трасса</a>
-                    <a href="tickets.html" class="overlay__nav-link">Билеты</a>
+                    <a href="index.html" class="overlay__nav-link" data-anim="fade-right" data-delay="100">Главная</a>
+                    <a href="history.html" class="overlay__nav-link" data-anim="fade-right" data-delay="200">История</a>
+                    <a href="teams.html" class="overlay__nav-link" data-anim="fade-right" data-delay="300">Команды</a>
+                    <a href="track.html" class="overlay__nav-link" data-anim="fade-right" data-delay="400">Трасса</a>
+                    <a href="tickets.html" class="overlay__nav-link" data-anim="fade-right" data-delay="500">Билеты</a>
                 </nav>
-
-                <div class="overlay__left-bottom">
-                    <div class="overlay__contact">
-                        <ul class="overlay__contact-list">
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Facebook.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Myspace Circled.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Pinterest.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                        </ul>
-
-                        <div class="overlay__social-info">
-                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
-                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
-                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
-                                    rel="noopener noreferrer">info@lm24.ru</a></p>
-                        </div>
-                    </div>
-                    <div class="overlay__politics">
-                        <a class="overlay__logo" href="index.html">farry.</a>
-
-                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
-                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
-                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="overlay__right">
-                <img src="src/images/bg-menu.png" alt="Иллюстрация" />
-            </div>
-            <div class="overlay__center">
+                <div class="overlay__center">
                 <button class="overlay__button-close" aria-label="Закрыть">✕</button>
 
 
@@ -86,8 +51,44 @@
                         </span>
                     </span>
                 </button>
-                <div class=""></div>
+                <div class="overlay__space"></div>
             </div>
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Myspace Circled.svg"
+                                        alt="Myspace Circled" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Pinterest.svg"
+                                        alt="Pinterest" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="src/images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            
         </div>
     </div>
 
@@ -96,7 +97,7 @@
             <div class="container">
                 <div class="banner__wrapper">
                     <div class="banner__content">
-                        <h1 class="banner__title">
+                        <h1 class="banner__title" data-anim="fade-up-slow hero">
                             НАЧАЛО
                             ИСТОРИИ
                             ЛЕ-МАНА
@@ -117,18 +118,18 @@
             <div class="container">
                 <div class="test__wrapper">
                     <div class="test__content section-dark">
-                        <span class="test__date section-date">1920 г.</span>
-                        <h2 class="test__title content-wide">
+                        <span class="test__date section-date" data-anim="fade-right">1920 г.</span>
+                        <h2 class="test__title content-wide" data-anim="fade-up" data-delay="100">
                             Испытание, а не гонка
                         </h2>
                         <div class="test__info">
-                            <p class="test__description content-narrow">
+                            <p class="test__description content-narrow" data-anim="fade-up" data-delay="200">
                                 В начале 1920-х годов в Европе доминировали классические Гран-при — чистая скорость,
                                 короткие дистанции, специализированные гоночные болиды. Но группу энтузиастов из
                                 Западного автомобильного клуба Франции (Automobile Club de l'Ouest, ACO) это не
                                 устраивало
                             </p>
-                            <p class="test__description content-narrow">
+                            <p class="test__description content-narrow" data-anim="fade-up" data-delay="300">
                                 Они задумали нечто иное: соревнование, которое проверит не то, кто быстрее на короткой
                                 дистанции, а то, чей автомобиль лучше. Надёжность. Экономичность. Освещение в ночное
                                 время. Управляемость. Именно эти качества нужны обычному автомобилю, который покупают
@@ -144,26 +145,26 @@
             <div class="container">
                 <div class="founders__wrapper ">
                     <div class="founders__contet section-light">
-                        <span class="founders__date section-date">1922 г.</span>
-                        <h2 class="founders__title section-title content-wide">
+                        <span class="founders__date section-date" data-anim="fade-right">1922 г.</span>
+                        <h2 class="founders__title section-title content-wide" data-anim="fade-up" data-delay="100">
                             Четверо основателей
                         </h2>
                         <div class="founders__info">
                             <div class="founders__col founders__col--left">
-                                <img src="src/images/history/founders/1.png" alt="Первый основатель-Джозеф" loading="lazy">
-                                <img src="src/images/history/founders/2.png" alt="Первый основатель-Дорма" loading="lazy">
+                                <img src="src/images/history/founders/1.png" alt="Первый основатель-Джозеф" loading="lazy"  data-anim="scale-in" data-delay="200">
+                                <img src="src/images/history/founders/2.png" alt="Первый основатель-Дорма" loading="lazy"  data-anim="scale-in" data-delay="300">
 
                             </div>
                             <div class="founders__col founders__col--center">
-                                <p>Легенда родилась на Парижском автосалоне в 1922 году, когда четыре человека
+                                <p  data-anim="scale-in" data-delay="200">Легенда родилась на Парижском автосалоне в 1922 году, когда четыре человека
                                     объединили усилия</p>
-                                <p>Именно Кокий предложил не 8-часовую гонку, как планировалось изначально, а 24-часовой
+                                <p data-anim="scale-in" data-delay="300">Именно Кокий предложил не 8-часовую гонку, как планировалось изначально, а 24-часовой
                                     марафон — испытание, которое отделит действительно надёжные автомобили от тех, кому
                                     есть что скрывать</p>
                             </div>
                             <div class="founders__col founders__col--right">
-                                <img src="src/images/history/founders/3.png" alt="Первый основатель-Кокий" loading="lazy">
-                                <img src="src/images/history/founders/4.png" alt="Первый основатель-Шенил" loading="lazy">
+                                <img src="src/images/history/founders/3.png" alt="Первый основатель-Кокий" loading="lazy" data-anim="scale-in" data-delay="400">
+                                <img src="src/images/history/founders/4.png" alt="Первый основатель-Шенил" loading="lazy" data-anim="scale-in" data-delay="500">
                             </div>
                         </div>
                     </div>
@@ -175,22 +176,22 @@
             <div class="container">
                 <div class="engineers__wrapper ">
                     <div class="engineers__contet section-light">
-                        <span class="engineers__date section-date">1923 г.</span>
-                        <h2 class="engineers__title content-wide section-title">
+                        <span class="engineers__date section-date" data-anim="fade-right">1923 г.</span>
+                        <h2 class="engineers__title content-wide section-title" data-anim="fade-up" data-delay="100">
                             «C’est impossible!» Это невозможно <br>— инженеры 1923 года
                         </h2>
                         <div class="engineers__info">
 
                             <div class="engineers__col content-narrow ">
-                                <p class="engineers__description">Какая машина выдержит целые сутки непрерывной гонки?
+                                <p class="engineers__description" data-anim="fade-up" data-delay="200">Какая машина выдержит целые сутки непрерывной гонки?
                                     По каким дорогам?
-                                <ul class="engineers__lists">
+                                <ul class="engineers__lists" data-anim="fade-up" data-delay="300">
                                     <li>Трасса: 17 км грунтовых и гравийных дорог с ямами</li>
                                     <li>Погода в день старта: ужасная — дождь, ветер, град</li>
 
                                 </ul>
                                 </p>
-                                <p class="engineers__description">
+                                <p class="engineers__description" data-anim="fade-up" data-delay="400">
                                     33 автомобиля готовились выехать на этот ад. Зрители, несмотря на погоду, заполнили
                                     трибуны. Никто ещё не знал, выдержит ли хоть одна машина 24 часа.</p>
                             </div>
@@ -208,8 +209,8 @@
             <div class="container">
                 <div class="start__wrapper ">
                     <div class="start__contet section-light">
-                        <span class="start__date section-date">26 мая 1923 г.</span>
-                        <h2 class="start__title content-wide section-title">
+                        <span class="start__date section-date" data-anim="fade-right">26 мая 1923 г.</span>
+                        <h2 class="start__title content-wide section-title" data-anim="fade-up" data-delay="100">
                             Первый старт
                             и рождение чемпионов
                         </h2>
@@ -218,22 +219,22 @@
                             <div class="start__col engineers__col--center ">
                                 <div class="start__left">
                                     <div class="start__left-1">
-                                        <p class="start__description">Организаторы придумали хитрую систему: гонка
+                                        <p class="start__description" data-anim="fade-up" data-delay="200">Организаторы придумали хитрую систему: гонка
                                             должна была стать трёхгодичным чемпионатом. Победителя объявляли бы только
                                             через три года, суммируя результаты. К счастью, эту идею быстро забросили.
                                         </p>
-                                        <p class="start__description">После 24 часов ада на колёсах первыми финишную
+                                        <p class="start__description" data-anim="fade-up" data-delay="300">После 24 часов ада на колёсах первыми финишную
                                             черту пересекли французы Андре Легаш и Рене Леонар на автомобиле Chenard &
                                             Walcker.</p>
-                                        <p class="start__description">Их результаты:</p>
+                                        <p class="start__description" data-anim="fade-up" data-delay="400">Их результаты:</p>
                                         <ul class="start__lists">
-                                            <li>Трасса: 17 км грунтовых и гравийных дорог с ямами</li>
-                                            <li>Погода в день старта: ужасная — дождь, ветер, град</li>
+                                            <li data-anim="fade-up" data-delay="500">Трасса: 17 км грунтовых и гравийных дорог с ямами</li>
+                                            <li data-anim="fade-up" data-delay="500">Погода в день старта: ужасная — дождь, ветер, град</li>
 
                                         </ul>
                                     </div>
                                     <div class="start__left-2">
-                                        <p class="start__description start__description--right">Организаторы придумали
+                                        <p class="start__description start__description--right" data-anim="fade-up" data-delay="500">Организаторы придумали
                                             хитрую систему: гонка
                                             должна была стать трёхгодичным чемпионатом. Победителя объявляли бы только
                                             через три года, суммируя результаты. К счастью, эту идею быстро забросили.
@@ -242,7 +243,7 @@
 
                                 </div>
                                 <div class="start__right">
-                                    <img src="src/images/history/start.png" alt="Начало истории" class="start__img" loading="lazy">
+                                    <img src="src/images/history/start.png" alt="Начало истории" class="start__img" loading="lazy" data-anim="fade-left" data-delay="300">
                                 </div>
                             </div>
 
@@ -256,7 +257,7 @@
 
         </section>
         <div class="container">
-            <h2 class="horizontal-scroll__title content-wide section-title">
+            <h2 class="horizontal-scroll__title content-wide section-title" data-anim="fade-up" >
                 Эпохи <br>противостояний
             </h2>
         </div>
@@ -340,20 +341,19 @@
                 <div class="track__wrapper ">
                     <div class="track__content section-light">
                         <span class="track__date section-date">1923 г.</span>
-                        <h2 class="track__title content-wide section-title">
-                            Первый старт
-                            и рождение чемпионов
+                        <h2 class="track__title content-wide section-title"  data-anim="fade-up" data-delay="100">
+                            Трасса
                         </h2>
                         <div class="track__info">
 
                             <div class="track__col track__col--center ">
                                 <div class="track__left">
 
-                                    <p class="track__description">длина круга — 13 626 метров.
+                                    <p class="track__description" data-anim="fade-up" data-delay="200">длина круга — 13 626 метров.
                                     </p>
-                                    <p class="track__description">Это одна из самых длинных трасс в мировом автоспорте.
+                                    <p class="track__description" data-anim="fade-up" data-delay="300">Это одна из самых длинных трасс в мировом автоспорте.
                                     </p>
-                                    <p class="track__description">В отличие от специально построенных автодромов в Монце
+                                    <p class="track__description" data-anim="fade-up" data-delay="400">В отличие от специально построенных автодромов в Монце
                                         или Нюрбургринге, трассу в Ле-Мане «нашли» на обычных французских дорогах.
                                         Это полуперманентная трасса — 9 из 13,6 километров — обычные дороги общего
                                         пользования, которые перекрывают на время гонки. Остальное — постоянный
@@ -363,7 +363,7 @@
 
 
                                 <div class="track__right">
-                                    <img src="src/images/history/track.png" alt="трасса" class="start__img" loading="lazy">
+                                    <img src="src/images/history/track.png" alt="трасса" class="start__img" loading="lazy" data-anim="fade-left" data-delay="300">
                                 </div>
                             </div>
                         </div>
@@ -378,12 +378,12 @@
             <div class="container">
                 <div class="photo-three__wrapper">
                     <div class="photo-three__content section-dark">
-                        <p class="track__description">Прямая, на которой рождались рекорды
+                        <p class="track__description" data-anim="fade-up">Прямая, на которой рождались рекорды
                             Знаменитая прямая Мюльсан — почти 6 километров без единого поворота.
                         </p>
-                        <p class="start__description">Здесь машины разгонялись до скоростей, которые сегодня кажутся
+                        <p class="start__description" data-anim="fade-up" data-delay="200">Здесь машины разгонялись до скоростей, которые сегодня кажутся
                             фантастикой:</p>
-                        <ul class="start__lists">
+                        <ul class="start__lists" data-anim="fade-up" data-delay="300">
                             <li>1971: Porsche 917 — 362 км/ч</li>
                             <li>1978: Porsche 935 — 367 км/ч</li>
                             <li>1988: WM Peugeot — 407 км/ч</li>
@@ -398,17 +398,17 @@
             <div class="container">
                 <div class="uniq__wrapper ">
                     <div class="uniq__content section-light">
-                        <h2 class="uniq__title content-wide section-title">
+                        <h2 class="uniq__title content-wide section-title" data-anim="fade-up">
                             Традиции, которые стали легендами
                         </h2>
                         <div class="uniq__info">
 
                             <div class="uniq__row  ">
 
-                                <div class="uniq__context">
+                                <div class="uniq__context" data-anim="fade-right" data-delay="100">
 
 
-                                    <h3 class="uniq__subtitle">Le Mans start: безумный старт</h3>
+                                    <h3 class="uniq__subtitle"  data-anim="fade-right" data-delay="100">Le Mans start: безумный старт</h3>
 
                                     <p class="uniq__description">До 1969 года гонка начиналась с того, что водители
                                         стояли на одной стороне трассы, а машины — на другой. По взмаху французского
@@ -417,7 +417,7 @@
 
                                 </div>
                                 <div class="uniq__right">
-                                    <img src="src/images/history/traditionals/1.png" alt="Le Mans start: безумный старт" class="start__img" loading="lazy">
+                                    <img src="src/images/history/traditionals/1.png" alt="Le Mans start: безумный старт" class="start__img" loading="lazy" data-anim="fade-left" data-delay="300">
                                 </div>
 
 
@@ -426,9 +426,9 @@
 
                             <div class="uniq__row  ">
                                 <div class="uniq__right">
-                                    <img src="src/images/history/traditionals/2.png" alt="Шампанское на подиуме: спасибо Дэну Герни" class="start__img" loading="lazy">
+                                    <img src="src/images/history/traditionals/2.png" alt="Шампанское на подиуме: спасибо Дэну Герни" class="start__img" loading="lazy" data-anim="fade-right" data-delay="100">
                                 </div>
-                                <div class="uniq__context">
+                                <div class="uniq__context" data-anim="fade-left" data-delay="300">
 
 
                                     <h3 class="uniq__subtitle">Шампанское на подиуме: спасибо Дэну Герни</h3>
@@ -449,7 +449,7 @@
 
                             <div class="uniq__row  ">
 
-                                <div class="uniq__context">
+                                <div class="uniq__context" data-anim="fade-right" data-delay="100">
 
 
                                     <h3 class="uniq__subtitle">Парад пилотов</h3>
@@ -461,7 +461,7 @@
                                 </div>
 
                                 <div class="uniq__right">
-                                    <img src="src/images/history/traditionals/3.png" alt="Парад пилотов" class="start__img" loading="lazy">
+                                    <img src="src/images/history/traditionals/3.png" alt="Парад пилотов" class="start__img" loading="lazy" data-anim="fade-left" data-delay="300">
                                 </div>
 
                             </div>
@@ -478,14 +478,14 @@
             <div class="container">
                 <div class="quote__wrapper ">
                     <div class="quote__content section-light">
-                        <h2 class="quote__title content-wide section-title">
+                        <h2 class="quote__title content-wide section-title" data-anim="fade-in" data-delay="100">
                             "
                         </h2>
                         <div class="quote__info">
 
                             <div class="quote__col track__col--center ">
                                 <div class="quote__left">
-                                    <p class="quote__description"> 24 часа Ле-Ман — это не только рекорды, трагедии и
+                                    <p class="quote__description" data-anim="fade-right" data-delay="200"> 24 часа Ле-Ман — это не только рекорды, трагедии и
                                         технологии. Это ещё и 250 000 человек, которые каждую третью субботу июня
                                         собираются у трассы. Они ставят палатки, жарят сосиски, спорят о тактике до
                                         хрипоты — и в четыре часа дня замирают, когда над трассой проносится французский
@@ -495,10 +495,10 @@
 
 
                                 <div class="quote__center">
-                                    <img src="src/images/history/author.png" alt="гонщик" class="start__img" loading="lazy">
+                                    <img src="src/images/history/author.png" alt="гонщик" class="start__img" loading="lazy" data-anim="scale-in" data-delay="400">
                                 </div>
                                 <div class="quote__right">
-                                    <p class="quote__description">За 100 лет гонка пережила войны, экономические кризисы
+                                    <p class="quote__description" data-anim="fade-left" data-delay="400">За 100 лет гонка пережила войны, экономические кризисы
                                         и смертельные аварии. Но традиции остались. Парад пилотов в центре Ле-Мана.
                                         Знаменитости, взмахивающие флагом. И тот самый момент, когда 62 машины срываются
                                         с места под рев моторов.</p>
@@ -506,7 +506,7 @@
                                 </div>
 
                             </div>
-                            <blockquote class="quote__blockquote">И это чувство — когда ты стоишь на трибуне в три часа
+                            <blockquote class="quote__blockquote" data-anim="fade-up-slow" data-delay="700">И это чувство — когда ты стоишь на трибуне в три часа
                                 ночи, смотришь на фары, летящие по прямой Мюльсан, и понимаешь: жизнь — это гонка. Всё
                                 остальное — просто ожидание.</blockquote>
 
@@ -550,6 +550,7 @@
     <script src="src/js/overlay.js"></script>
     <script src="src/js/cursor.js"></script>
     <script src="src/js/scroll.js"></script>
+    <script src="src/js/animation.js"></script>
 
 
 </body>

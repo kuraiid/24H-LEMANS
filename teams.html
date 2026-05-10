@@ -31,48 +31,13 @@
         <div class="overlay__wrapper">
             <div class="overlay__left">
                 <nav class="overlay__nav" aria-label="Основная навигация">
-                    <a href="index.html" class="overlay__nav-link">Главная</a>
-                    <a href="history.html" class="overlay__nav-link">История</a>
-                    <a href="teams.html" class="overlay__nav-link">Команды</a>
-                    <a href="track.html" class="overlay__nav-link">Трасса</a>
-                    <a href="tickets.html" class="overlay__nav-link">Билеты</a>
+                    <a href="index.html" class="overlay__nav-link" data-anim="fade-right" data-delay="100">Главная</a>
+                    <a href="history.html" class="overlay__nav-link" data-anim="fade-right" data-delay="200">История</a>
+                    <a href="teams.html" class="overlay__nav-link" data-anim="fade-right" data-delay="300">Команды</a>
+                    <a href="track.html" class="overlay__nav-link" data-anim="fade-right" data-delay="400">Трасса</a>
+                    <a href="tickets.html" class="overlay__nav-link" data-anim="fade-right" data-delay="500">Билеты</a>
                 </nav>
-
-                <div class="overlay__left-bottom">
-                    <div class="overlay__contact">
-                        <ul class="overlay__contact-list">
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Facebook.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Myspace Circled.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
-                                    rel="noopener noreferrer"><img src="src/images/icons/light/Pinterest.svg"
-                                        alt="Facebook" class="overlay__icon"></a></li>
-                        </ul>
-
-                        <div class="overlay__social-info">
-                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
-                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
-                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
-                                    rel="noopener noreferrer">info@lm24.ru</a></p>
-                        </div>
-                    </div>
-                    <div class="overlay__politics">
-                        <a class="overlay__logo" href="index.html">farry.</a>
-
-                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
-                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
-                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="overlay__right">
-                <img src="src/images/bg-menu.png" alt="Иллюстрация" />
-            </div>
-            <div class="overlay__center">
+                <div class="overlay__center">
                 <button class="overlay__button-close" aria-label="Закрыть">✕</button>
 
 
@@ -86,8 +51,44 @@
                         </span>
                     </span>
                 </button>
-                <div class=""></div>
+                <div class="overlay__space"></div>
             </div>
+                <div class="overlay__left-bottom">
+                    <div class="overlay__contact">
+                        <ul class="overlay__contact-list">
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Facebook.svg"
+                                        alt="Facebook" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Myspace Circled.svg"
+                                        alt="Myspace Circled" class="overlay__icon"></a></li>
+                            <li class="overlay__contact-item"><a class="overlay__contact-link" href="#"
+                                    rel="noopener noreferrer"><img src="src/images/icons/light/Pinterest.svg"
+                                        alt="Pinterest" class="overlay__icon"></a></li>
+                        </ul>
+
+                        <div class="overlay__social-info">
+                            <p class="overlay__phone"><a href="tel:+79000000000" class="overlay__link"
+                                    rel="noopener noreferrer">+7 (911) 786-56-78</a></p>
+                            <p class="overlay__email"><a href="mailto:info@lm24wheel.ru" class="overlay__link"
+                                    rel="noopener noreferrer">info@lm24.ru</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="overlay__politics">
+                        <a class="overlay__logo" href="index.html">farry.</a>
+
+                        <a class="overlay__link overlay__link--left" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--center" href="#">Политика конфиденциальности</a>
+                        <a class="overlay__link overlay__link--right" href="#">Настройки конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="overlay__right">
+                <img src="src/images/bg-menu.png" alt="Иллюстрация" />
+            </div>
+            
         </div>
     </div>
 
@@ -96,30 +97,30 @@
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__content">
-                        <h1 class="hero__title">
+                        <h1 class="hero__title" data-anim="fade-up-slow" data-anim="hero">
                             СПИСОК <br>
                             КОМАНД
                         </h1>
-                        <div class="hero__info">
-                            <p class="hero__description">
+                        <div class="hero__info" data-anim="fade-left" data-anim="hero">
+                            <p class="hero__description" >
                                 Ferrari, Toyota, Cadillac и десятки других команд, ведущих борьбу за победу в самой
                                 престижной гонке на выносливость.
                             </p>
                         </div>
                     </div>
                     <img src="src/images/banner-teams.png" alt="Синий гоночный автомобиль на трассе Ле-Мана"
-                        class="hero__image" loading="lazy" width="600" height="400">
+                        class="hero__image" loading="lazy" width="600" height="400"  >
 
-                    <div class="hero__stats">
-                        <div class="hero__stats-item">
+                    <div class="hero__stats" >
+                        <div class="hero__stats-item" data-anim="scale-in">
                             <p class="hero__stats-number">62</p>
                             <p class="hero__stats-label">экипажа на старте сезона</p>
                         </div>
-                        <div class="hero__stats-item">
+                        <div class="hero__stats-item"data-anim="scale-in" data-anim="scale-in" data-delay="75">
                             <p class="hero__stats-number">3</p>
                             <p class="hero__stats-label">главных класса чемпионата</p>
                         </div>
-                        <div class="hero__stats-item">
+                        <div class="hero__stats-item" data-anim="scale-in" data-delay="150">
                             <p class="hero__stats-number">18</p>
                             <p class="hero__stats-label">производителей участвуют в гонке</p>
                         </div>
@@ -133,9 +134,9 @@
                 <div class="teams__wrapper">
                     <div class="teams__content">
                         <div class="teams__block">
-                            <h3 class="teams__title">HYPERCAR</h3>
+                            <h3 class="teams__title" data-anim="fade-right">HYPERCAR</h3>
                             <div class="teams__cards">
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" >
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">FERRARI AF CORSE</p>
@@ -156,7 +157,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="0">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">AF CORSE</p>
@@ -177,7 +178,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="75">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">AF CORSE</p>
@@ -198,7 +199,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="150">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">PEUGEOT TOTALENERGIES</p>
@@ -219,7 +220,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="225" >
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">PEUGEOT TOTALENERGIES</p>
@@ -240,7 +241,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="300">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">Cadillac WTR</p>
@@ -261,7 +262,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="375">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">CADILLAC HERTZ TEAM JOTA</p>
@@ -282,7 +283,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover"data-anim="fade-left" data-delay="400" >
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">CADILLAC HERTZ TEAM JOTA</p>
@@ -303,7 +304,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover"data-anim="fade-left" data-delay="450" >
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">ASTON MARTIN THOR TEAM</p>
@@ -324,7 +325,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="525">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">ASTON MARTIN THOR TEAM</p>
@@ -345,7 +346,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="600">
 
                                     <div class="card__top">
 
@@ -368,7 +369,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="675">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">TOYOTA RACING</p>
@@ -389,7 +390,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="750">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">BMW M TEAM WRT</p>
@@ -409,7 +410,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="825">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">BMW M TEAM WRT</p>
@@ -429,7 +430,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="900">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">ALPINE ENDURANCE TEAM</p>
@@ -450,7 +451,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="975">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">ALPINE ENDURANCE TEAM</p>
@@ -471,7 +472,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1125">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">GENESIS MAGMA RACING</p>
@@ -492,7 +493,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1200">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">GENESIS MAGMA RACING</p>
@@ -516,9 +517,9 @@
                             </div>
                         </div>
                         <div class="teams__block">
-                            <h3 class="teams__title">LMP2</h3>
+                            <h3 class="teams__title" data-anim="fade-right">LMP2</h3>
                             <div class="teams__cards">
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="0">
                                     <div class="card__top">
                                         <div class="card__company">
                                             <p class="card__name">DKR ENGINEERING</p>
@@ -538,7 +539,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="75">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -559,7 +560,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="150">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -580,7 +581,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="225">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -601,7 +602,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="300">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -621,7 +622,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="375">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -641,7 +642,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="450">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -661,7 +662,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="525">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -681,7 +682,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="675">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -701,7 +702,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="750">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -721,7 +722,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="825">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -741,7 +742,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="900">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -761,7 +762,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="975">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -781,7 +782,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1050">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -801,7 +802,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1125">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -821,7 +822,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1200">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -841,7 +842,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1275">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -862,7 +863,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1350">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -883,7 +884,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1425">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -909,7 +910,7 @@
                         <div class="teams__block">
                             <h3 class="teams__title">LMGT3</h3>
                             <div class="teams__cards">
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="0">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -930,7 +931,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="75">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -952,7 +953,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="150">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -974,7 +975,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="225">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -996,7 +997,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="300">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1018,7 +1019,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="375">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1040,7 +1041,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="425">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1062,7 +1063,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="500">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1084,7 +1085,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="575">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1106,7 +1107,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="625">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1128,7 +1129,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="700">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1150,7 +1151,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="775">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1172,7 +1173,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="850">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1194,7 +1195,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="925">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1214,7 +1215,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1000">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1234,7 +1235,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1075">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1256,7 +1257,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1150">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1278,7 +1279,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1225">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1300,7 +1301,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1300">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1322,7 +1323,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1375">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1344,7 +1345,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1425">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1366,7 +1367,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1500">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1388,7 +1389,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1525">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1410,7 +1411,7 @@
 
                                 </article>
 
-                                <article class=" teams__card card cursor-hover">
+                                <article class=" teams__card card cursor-hover" data-anim="fade-left" data-delay="1600">
                                     <div class="card__top">
                                         <div class="card__company">
 
@@ -1488,6 +1489,8 @@
     <script src="src/js/overlay.js"></script>
     <script src="src/js/cursor.js"></script>
     <script src="src/js/scroll.js"></script>
+    <script src="src/js/animation.js"></script>
+
 
 
 

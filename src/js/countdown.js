@@ -16,7 +16,7 @@ class CountdownTimer {
 
         this.interval = setInterval(() => {
             this.update();
-        }, 1000); // лучше 1 секунда
+        }, 1000);
     }
 
     update() {
