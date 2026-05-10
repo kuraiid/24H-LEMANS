@@ -11,41 +11,23 @@
   position: absolute;
   inset: 0;
   
-  /* Вертикальные линии под наклоном вправо + горизонтальные прямые */
+  // ★ Квадратики 50×50px
   background-image:
-    /* Вертикальные — наклон вправо */
     repeating-linear-gradient(
       97deg,
       transparent,
-      transparent 79px,
-      rgba(16, 32, 74, 0.045) 79px,
-      rgba(16, 32, 74, 0.045) 80px
+      transparent 49px,
+      rgba(16, 32, 74, 0.045) 49px,
+      rgba(16, 32, 74, 0.045) 50px
     ),
-    /* Горизонтальные — прямые */
     repeating-linear-gradient(
       0deg,
       transparent,
-      transparent 79px,
-      rgba(16, 32, 74, 0.045) 79px,
-      rgba(16, 32, 74, 0.045) 80px
+      transparent 49px,
+      rgba(16, 32, 74, 0.045) 49px,
+      rgba(16, 32, 74, 0.045) 50px
     );
-  
-  /* Выпуклый эффект */
-  mask-image: radial-gradient(
-    ellipse 140% 90% at 50% 50%,
-    black 30%,
-    transparent 70%
-  );
-  -webkit-mask-image: radial-gradient(
-    ellipse 140% 90% at 50% 50%,
-    black 30%,
-    transparent 70%
-  );
-  
-  will-change: mask-image;
 }
-
-
 
 @media (max-width: 900px) {
   .bg-grid::before,
