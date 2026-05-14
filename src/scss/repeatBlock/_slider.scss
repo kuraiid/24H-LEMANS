@@ -65,12 +65,12 @@
   &__slide {
     flex: 0 0 calc((100% - 4rem) / 3); 
 
-    // ★ Планшеты — 2 слайда ★
+    
     @media (max-width: 1400px) {
       flex: 0 0 calc((100% - 2rem) / 2); 
     }
 
-    // ★ Телефоны — 1 слайд ★
+   
     @media (max-width: 960px) {
       flex: 0 0 100%; 
     }
@@ -81,11 +81,3 @@
 }
 
 
-
-.slider__progress-bar {
-    
-}
-
-.slider__progress-fill {
-    
-}

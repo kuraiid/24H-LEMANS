@@ -38,7 +38,7 @@
     
 
     &__outer-circle {
-         width: clamp(21rem, 20vw, 32rem);   // от 16rem до 32rem
+         width: clamp(21rem, 20vw, 32rem);   
     height: clamp(21rem, 20vw, 32rem);
         flex-shrink: 0;
         border: 1px solid white;
@@ -48,7 +48,7 @@
     }
 
     &__inner-circle {
-        width: clamp(17rem, 16vw, 25.6rem); // от 12.8rem до 25.6rem
+        width: clamp(17rem, 16vw, 25.6rem); 
         height: clamp(17rem, 16vw, 25.6rem);
         flex-shrink: 0;
         border: 1px solid white;

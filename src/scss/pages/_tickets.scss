@@ -138,23 +138,11 @@
         transform: rotate(-45deg);
         text-align: center;
         align-self: flex-end;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        transition: color 0.4s ease;
 
     }
-}
-
-.pay__submit {
-
-    font-size: $font-size-xl;
-    width: 15rem;
-    height: 15rem;
-    transform: rotate(-45deg);
-    text-align: center;
-
-    align-self: flex-end;
-
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-
-    transition: color 0.4s ease;
 }

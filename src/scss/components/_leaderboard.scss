@@ -6,20 +6,23 @@
   }
 
   &__category-nav {
-        @include flex(flex-start);
+    @include flex(flex-start);
 
     gap: 3rem;
     margin-top: 5rem;
   }
+
   &__arrow {
     @extend %style-button-tr;
     font-size: $font-size-ml;
     font-weight: 500;
     transition: all 0.6s ease;
+
     &:hover {
       transform: scale(2);
     }
   }
+
   &__list {
     margin-top: 5rem;
   }
@@ -36,7 +39,8 @@
     text-align: left;
   }
 
-  &__header-cell--right, &__cell--right {
+  &__header-cell--right,
+  &__cell--right {
     text-align: right;
   }
 
@@ -95,7 +99,7 @@
 
   &__more {
     margin-top: 2rem;
-        @include flex(right);
+    @include flex(right);
 
   }
 

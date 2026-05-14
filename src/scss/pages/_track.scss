@@ -3,11 +3,11 @@
     width: 100%;
     padding-top: 10rem;
 
-}
-
-.track-map__img {
+    &__img {
     width: 100%;
     display: block;
+}
+
 }
 
 .track-point {
@@ -16,68 +16,71 @@
     cursor: pointer;
     max-width: 500px;
     z-index: 1;
+
+    &__dot {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: $color-accent;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__popup {
+        position: absolute;
+        max-width: 380px;
+        width: max-content;
+        bottom: 140%;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        background: $color-accent;
+        color: $color-text-second;
+        padding: 2rem;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 0.25s ease;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+
+    &.active {
+        z-index: 999;
+        pointer-events: auto;
+    }
+
+    &.active &__dot {
+        background-color: transparent;
+        border: 1px solid $color-accent;
+        z-index: 1;
+    }
+
+    &.active &__dot::after {
+        display: none;
+    }
+
+    &__popup.active {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        z-index: 10;
+        pointer-events: auto;
+    }
+
+    &__dot::after {
+        content: "";
+        position: absolute;
+
+        inset: -6px;
+
+        border: 1px solid $color-active;
+        border-radius: 50%;
+
+        animation: pulse 1.5s infinite;
+    }
+
 }
 
-.track-point__dot {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: $color-accent;
-    position: relative;
-    z-index: 2;
-}
 
-.track-point__popup {
-    position: absolute;
-    max-width: 380px;
-    width: max-content;
-    bottom: 140%;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    background: $color-accent;
-    color: $color-text-second;
-    padding: 2rem;
-    border-radius: 5px;
-    opacity: 0;
-    transition: 0.25s ease;
-    pointer-events: none;
-    z-index: 1;
-}
-
-
-.track-point.active {
-    z-index: 999;
-    pointer-events: auto;
-}
-
-.track-point.active .track-point__dot {
-    background-color: transparent;
-    border: 1px solid $color-accent;
-    z-index: 1;
-}
-
-.track-point.active .track-point__dot::after {
-    display: none;
-}
-
-.track-point__popup.active {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-    z-index: 10;
-    pointer-events: auto;
-}
-
-.track-point__dot::after {
-    content: "";
-    position: absolute;
-
-    inset: -6px;
-
-    border: 1px solid $color-active;
-    border-radius: 50%;
-
-    animation: pulse 1.5s infinite;
-}
 
 @keyframes pulse {
     0% {
@@ -133,16 +136,14 @@
         display: block;
     }
 
-    .specification__left img {
+    &__left img {
         width: 80%;
     }
 
-    .specification__left .specification__description {
+    &__left &__description {
         width: 55%;
 
     }
-
-
 }
 
 
